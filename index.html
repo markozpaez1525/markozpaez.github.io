@@ -1,0 +1,743 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	
+	<!-- Flipster Carousel-->
+    <link rel="stylesheet" href="css/jquery.flipster.min.css">
+	<script src="js/jquery.min.js"></script>
+    <script src="js/jquery.flipster.min.js"></script>
+	
+
+	<!-- Website Title -->
+	<link rel="icon" href="img/img-title-icon.png"/>
+    <title>Markoz Paez</title>
+	
+	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top fixed-top">
+		<div style="display:none;" id="logoMobileMode">
+			<img src="img/img-banner-logo.png" class="img-fluid" alt="Logo">
+		</div>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul id="logo" class="navbar-nav">
+				<li class="nav-item">
+					<a href="index.html">
+						<img id="" src="img/img-banner-logo.png" class="img-fluid" alt="Logo">
+					</a>
+				</li>
+			</ul>
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a id="navHome" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item">
+					<a id="navPortfolio" class="nav-link">Portfolio</a>
+				</li>
+				<li class="nav-item">
+					<a id="navBlogs" class="nav-link">Blogs</a>
+				</li>
+				<li class="nav-item">
+					<a id="navAbout" class="nav-link">About</a>
+				</li>
+				<li class="nav-item" data-toggle="modal" data-target="#EmailCaptureModal">
+					<a id="navContact" class="nav-link">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	
+  </head>
+  
+  <body>
+	
+	<div class="container-fluid"> 
+	
+		<!-- Start Home -->
+		<section id="myHome" class="section-gap section-bg-2">
+			<div class="row"> 
+				<div class="col-12 col-sm-12 col-md-12 col-lg-8"> 
+					<div class="embed-responsive embed-responsive-16by9">
+					  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/n5WiSkvFCMc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-4"> 
+					<p id="homeIntro" class="mt-20"></p>
+					<p id="homeDesc" class="mt-20"></p>
+				</div>
+			</div>
+		</section>
+		<!-- End Home -->
+
+		<!-- Start Portfolio -->
+		<section class="section-gap">
+			<div id="myPortfolio"> 
+			<div class="text-center mb-40"> 
+				<h1 class="section-title">----------Portfolio---------</h1>
+			</div>
+			<article id="" class="mt-20">
+
+				<div id="carousel">
+					<ul class="flip-items">
+
+						<li data-flip-title="Corporate" class="text-center">
+							<img id="" src="img/img-text-1.jpg" class="img-fluid"  alt="Portfolio"><br>
+							<a href="https://remotech.ga" target="_blank">
+								<span class="btn btn-primary mt-10">Visit Site</span>
+							</a>
+						 </li>
+						 <li data-flip-title="Travel" class="text-center">
+							<img id="" src="img/img-text-2.jpg"  class="img-fluid" alt="Portfolio"><br>
+							<a href="https://bit.ly/markozrealestate" target="_blank">
+								<span class="btn btn-primary mt-10">Visit Site</span>
+							</a>
+						 </li >
+						 <li data-flip-title="Real Estate" class="text-center">
+							<img id="" src="img/img-text-3.jpg"  class="img-fluid" alt="Portfolio"><br>
+							<a href="https://bit.ly/markozrealestate" target="_blank">
+								<span class="btn btn-primary mt-10">Visit Site</span>
+							</a>
+						 </li>
+						 <li data-flip-title="Food" class="text-center">
+							<img id="" src="img/img-text-4.jpg"  class="img-fluid" alt="Portfolio"><br>
+							<a href="https://bit.ly/markozrealestate" target="_blank">
+								<span class="btn btn-primary mt-10">Visit Site</span>
+							</a>
+						 </li>
+						 <li data-flip-title="Pets" class="text-center">
+							<img id="" src="img/img-text-5.png"  class="img-fluid" alt="Portfolio"><br>
+							<a href="https://bit.ly/markozrealestate" target="_blank">
+								<span class="btn btn-primary mt-10">Visit Site</span>
+							</a>
+						 </li>
+						
+					</ul>
+				</div>
+
+				<script>
+					var carousel = $("#carousel").flipster({
+						style: 'carousel',
+						spacing: -0.5,
+						nav: true,
+						buttons:   true,
+					});
+				</script>
+
+			</article>
+			
+			</div>
+		</section>
+		<!-- End Portfolio -->
+
+		<!-- Start Blogs -->
+		<section class="section-gap section-bg-2">
+			<div id="myBlogs"> 
+				<div class="text-center mb-40"> 
+					<h1 class="section-title">----------Blogs---------</h1>
+					<p class="mt-20">This section is my venue to express my thoughts and opinions about the things that I had experienced, observed, learned and sometimes imagination ko lang. :)</p>
+				</div>
+				<div class="row mt-20"> 
+					<div class="col-12 col-sm-12 col-md-6 col-lg-3"> 
+						<div class="card border-general zoom text-center">
+						  <img src="img/img-copywriting.png" class="card-img-top" alt="Card Image">
+						  <div class="card-body">
+							<h6 class="card-title">Valuable Tips on How to be a Copywriter</h6>
+							<p class="card-text"></p>
+								<div data-toggle="tooltip" data-placement="top" title="Disclaimer: I am not the author of this copy. My intention is to share what I had discovered for those who are interested to be a copywriter. Credit to the owner of this copy. Click and download if you are interested.">
+									<a href="docs/Copywriting.pdf" target="_blank" class="a-link" download><span>Download Copywriting Tips</span></a>
+									
+								</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-3"> 
+						<div class="card border-general zoom">
+						  <img src="img/img-heart.png" class="card-img-top" alt="Card Image">
+						  <div class="card-body">
+							<h6 class="card-title">Why do we need to Fall for the Wrong Person atleast once?</h6>
+							<p class="card-text"></p>
+							<div data-toggle="tooltip" data-placement="top" title="Oops! May HUGOT ka? May 'LOVE LIFE' KA? Ha? Ha? Ha? Click na!">
+							<a href="#" target="_blank" class="a-link">Hugot pa more...</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-3"> 
+						<div class="card border-general zoom">
+						  <img src="img/img-people.png" class="card-img-top" alt="Card Image">
+						  <div class="card-body">
+							<h6 class="card-title">What are the Habits of Successful People?</h6>
+							<p class="card-text"></p>
+							<div data-toggle="tooltip" data-placement="top" title="Nakz! Gusto mong yumaman? Cge, learn more here!">
+							<a href="#" target="_blank" class="a-link">Learn more...</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-3"> 
+						<div class="card border-general zoom">
+						  <img src="img/img-travel.png" class="card-img-top" alt="Card Image">
+						  <div class="card-body">
+							<h6 class="card-title">How to travel in Iloilo City and live like local?</h6>
+							<p class="card-text"></p>
+							<div data-toggle="tooltip" data-placement="top" title="Information about Iloilo City! Malagaw ka sa Iloilo? This is your guide.">
+							<a href="#" target="_blank" class="a-link">Let's go...</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Blogs -->		
+		
+		<!--Start Quotes -->
+		<section class="section-gap section-bg-1">
+			<div id="myQuotesToLiveBy">
+				<div class="text-center mb-40"> 
+					<h1 class="section-title">----------Quote & Quote---------</h1>
+					<p class="mt-20">These are the quotes that I loved to live by.</p>
+				</div>
+			
+				<!-- Start Quotes First Batch -->
+				<div class="row mt-20">
+				
+					<div class="col-12 col-sm-4 col-md-4">
+						<div class="ribbon-card">
+							<div class="copy">
+								"What we are is God's gift to us. What we become is our gift to GOD."
+							</div>
+							<div class="ribbon">
+								Quote #: 1
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-4 col-md-4">
+						<div class="ribbon-card">
+							<div class="copy">
+								"God has two dwellings: One in Heaven, and the other in a Meek and Thankful Heart."
+							</div>
+							<div class="ribbon">
+								Quote #: 2
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-4 col-md-4">
+						<div class="ribbon-card">
+							<div class="copy">
+								"The BEST things in Life are just simple things, what you have to do is to appreciate it."
+							</div>
+							<div class="ribbon">
+								Quote #: 3
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Quotes First Batch -->
+					
+				<!-- Start Quotes Second Batch -->
+				<div class="row">
+					<div class="col-12 col-sm-4">
+						<div class="ribbon-card">
+							<div class="copy">
+								"When you are literally Hungry, that's the time you will really appreciate Food, Money and Health."
+							</div>
+							<div class="ribbon">
+								Quote #: 4
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-4">
+						<div class="ribbon-card">
+							<div class="copy">
+								"Dream as if you'll live Forever. Live as if you'll Die Today."
+							</div>
+							<div class="ribbon">
+								Quote #: 5
+							</div>
+						</div>		  
+					</div>
+					<div class="col-12 col-sm-4">
+						<div class="ribbon-card">
+							<div class="copy">
+								"All of US have the Power of Choice. I chose to be Rich and I make that Choice Everyday."
+							</div>
+							<div class="ribbon">
+								Quote #: 6
+							</div>
+						</div>		  
+					</div>
+				</div>
+				<!-- End Quotes Second Batch -->
+					
+				<!-- Start Quotes Third Batch -->
+				<div class="row">
+					<div class="col-12 col-sm-4">
+						<div class="ribbon-card">
+							<div class="copy">
+								"Always be True to Yourself, in that way, Happiness is Easy."
+							</div>
+							<div class="ribbon">
+								Quote #: 7
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-4">
+						<div class="ribbon-card">
+							<div class="copy">
+								"The Greatest Happiness can be achieved by making other People Happy."
+							</div>
+							<div class="ribbon">
+								Quote #: 8
+							</div>
+						</div>		  
+					</div>
+					<div class="col-12 col-sm-4">
+						<div class="ribbon-card">
+							<div class="copy">
+								"The surest way to be decieved is to think one's self more clever than others."
+							</div>
+							<div class="ribbon">
+								Quote #: 9
+							</div>
+						</div>		  
+					</div>
+				</div>
+				<!-- End Quotes Third Batch -->
+					
+			</div>
+		</section>
+		<!-- End Quotes -->
+		
+		<section>
+			<div id="div-bird">
+				<img id="img-bird" src="img/bird.gif" alt="Bird"> 
+			</div>
+		</section>
+		
+		<!-- Start About Me -->
+		<section class="section-gap section-bg-3">
+			<div id="myPersonalInfo" class=""> 
+			<div class="text-center mb-40"> 
+					<h1 class="section-title">----------Meet Markoz----------</h1>
+			</div>
+			<div class="panel with-nav-tabs panel-primary">
+				<div class="panel-heading">
+					<ul class="nav nav-tabs">
+						<li><a href="#tab1primary" data-toggle="tab">Curriculum Vitae</a></li>
+						<li><a href="#tab2primary" data-toggle="tab">Photos</a></li>
+						<li><a href="#tab3primary" data-toggle="tab">eBooks</a></li>
+					</ul>
+				</div>
+				<div id="panelBody">
+					<div class="tab-content">
+						<div class="tab-pane fade" id="tab1primary">
+							<div class="row">
+								<div class="col-12 col-sm-12 col-md-12 col-lg-12"> 
+									<div class="row"> 
+										<div class="col-12 col-sm-12 col-md-6 col-lg-6 author-info"> 
+											<img id="img-author" src="img/img-author.jpeg" class="rounded border-general border-general-info" alt="Author">
+										</div>
+										<div class="col-12 col-sm-12 col-md-6 col-lg-6 my-auto author-info">
+											<h3 class="mt-10 font-weight-bold">MARKOZ PAEZ</h3>
+											<span class="font-weight-bold">Phone/WhattsApp:</span><a class="a-link" href="tel:+639281274145"><br><span>+639281274145</span></a><br>
+											<span class="font-weight-bold">Email:</span><a class="a-link" href="mailto:markozpaez1525@gmail.com"><br><span>markozpaez1525@gmail.com</span></a><br>
+											<span class="font-weight-bold">Address:</span><br><span>Iloilo City 5000, Philippines</span>
+											
+										</div>
+									</div>
+									
+									<div class="row mt-20"> 
+										<div class="col-12 col-sm-12 col-md-12 col-lg-12"> 
+											<fieldset class="fieldset-quote"> 
+											<legend class="fieldset-legend">PROFESSIONAL SUMMARY</legend>
+												<span>Experienced working in web development industry for more than 4 years by developing websites using Bootstrap, Javascript, CSS, HTML and mostly front-end development.</span>
+											</fieldset>
+										</div>
+									</div>
+										
+									<div class="row mt-20"> 
+										<div class="col-12 col-sm-12 col-md-12 col-lg-12"> 
+											<fieldset class="fieldset-quote"> 
+											<legend class="fieldset-legend">SKILLS</legend>
+												<span>
+												•	Bootstrap, JQuery, Javascript, CSS and HTML<br>
+												•	Data Entry<br>	
+												•	Customer Service<br>	
+												•	Social Media Manager<br>	
+												•	ConnectWise Email Marketing	
+												</span>
+											</fieldset>
+										</div>
+									</div>
+									<div id="readMorePlus">
+										<i class="far fa-plus-square"></i>
+										<span>Job Experience</span>
+									</div>
+									<div id="readMoreMinus">
+										<i class="far fa-minus-square"></i>
+										<span>Job Experience</span>
+									</div>
+									<div id="authorExperience" class="row mt-20"> 
+										<div class="col-12 col-sm-12 col-md-12 col-lg-12"> 
+											<fieldset class="fieldset-quote"> 
+											<legend class="fieldset-legend">EXPERIENCES</legend>
+												<span  class="font-weight-bold">
+													Virtual Assistant<br>
+													Upwork | Iloilo City, Iloilo 5000<br>
+													July 2015 - Current<br>
+												</span>
+												<span>
+												Account Executive in Sales Department<br> 
+												•	Submitting quotes to customers<br> 
+												•	Process purchase orders<br>
+												•	Tracking orders<br><br>
+												</span>
+												<span  class="font-weight-bold">
+													Customer Service Representative<br>
+													Transcom Worldwide Philippines | Iloilo City, Iloilo 5000<br>
+													February 2015 – May 2015<br>
+												</span>
+												<span>
+												•	Inbound calls for billing inquiries from customers<br>
+												•	Selling Cable, Internet and Phone Services<br><br>
+
+												</span>
+												<span  class="font-weight-bold">
+													Web Developer<br>
+													Sell2Any B.V. | Iloilo City, Iloilo 5000<br>
+													June 2014 – November 2014<br>
+												</span>
+												<span>
+												•	Convert PSD web design into HTML file using bootstrap<br><br>
+												</span>
+												<span  class="font-weight-bold">
+													Web Developer<br>
+													HP Outsourcing Philippines, Inc. | Davao City 8000<br>
+													October 2013 – March 2014<br>
+												</span>
+												<span>
+												•	Helped Team developed Funnel Websites using WordPress<br><br>
+												</span>
+												<span  class="font-weight-bold">
+													Software Programmer<br>
+													Geodata Solutions Inc. | Koronadal City 9506<br>
+													July 2009 – September 2013<br>
+												</span>
+												<span>
+												Helped Team developed the Hospital Information System<br>
+												•	Design the graphical user interface of every module<br> 
+												•	Writing backend codes<br> 
+												•	Tests the system for quality assurance.<br><br>
+												</span>
+											</fieldset>
+
+										</div>
+									</div>
+									<div id="authorEducation" class="row mt-20"> 
+										<div class="col-12 col-sm-12 col-md-12 col-lg-12"> 
+											<fieldset class="fieldset-quote"> 
+											<legend class="fieldset-legend">EDUCATION</legend>
+												<span class="font-weight-bold">
+													Bachelor of Science in Computer Engineering<br>
+												</span>
+												<span>
+													University of Southern Mindanao<br>Kabacan, Cotabato 9407<br>
+													March 2009
+												</span>
+											</fieldset>
+										</div>
+									</div>
+
+								</div>
+							
+							</div>
+						
+						</div>
+						<div class="active tab-pane fade" id="tab2primary">
+							<!-- <div class="row justify-content-center">  -->
+								<!-- <div class="col-12 col-sm-12 col-md-12 col-lg-12 mt-20 text-center">  -->
+									<!-- <!-- SnapWidget --> 
+									<!-- <!-- <script src="https://snapwidget.com/js/snapwidget.js"></script> -->
+
+									<!-- <h3 class="section-title mb-50">Follow Me on Instagram</h3> -->
+									<!-- <!-- <script src="js/instagram.js"></script> --> 
+									<!-- <!-- <iframe src="https://snapwidget.com/embed/824882" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; "></iframe> --> 
+									
+									
+									<!-- <a href="https://www.instagram.com/markozpaez/" target="_blank"> -->
+										<!-- <button class="btn btn-success btn-lg btn-block">See More Photos</button> -->
+									<!-- </a> -->
+								<!-- </div> -->
+							<!-- </div> -->
+							
+							<div class="text-center">
+								<h3 class="section-title mt-10 mb-30">Follow Me on Instagram</h3>
+							</div>
+							
+							<div class="row">
+								<div class="col-lg-4 col-md-4">
+									<a href="https://www.instagram.com/p/Bz9anmQHLHZ/" target="_blank">
+										<img src="img/ig-1.jpg" class="ig-pic img-fluid" alt="instagramfeed">
+									</a>
+								</div>
+								<div class="col-lg-4 col-md-4">
+									<a href="https://www.instagram.com/p/Bz0XfMXgYV4/" target="_blank">
+										<img src="img/ig-2.jpg" class="ig-pic img-fluid" alt="instagramfeed">
+									</a>
+								</div>
+								<div class="col-lg-4 col-md-4">
+									<a href="https://www.instagram.com/p/BjGmcnXHkXo/" target="_blank">
+										<img src="img/ig-3.jpg" class="ig-pic img-fluid" alt="instagramfeed">
+									</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-4 col-md-4">
+									<a href="https://www.instagram.com/p/BjbOqn5H-lT/" target="_blank">
+										<img src="img/ig-4.jpg" class="ig-pic img-fluid" alt="instagramfeed">
+									</a>
+								</div>
+								<div class="col-lg-4 col-md-4">
+									<a href="https://www.instagram.com/p/BiA9T5LnVOm/" target="_blank">
+										<img src="img/ig-5.jpg" class="ig-pic img-fluid" alt="instagramfeed">
+									</a>
+								</div>
+								<div class="col-lg-4 col-md-4">
+									<a href="https://www.instagram.com/p/BkJsJKUnydo/" target="_blank">
+										<img src="img/ig-6.jpg" class="ig-pic img-fluid" alt="instagramfeed">
+									</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-4 col-md-4">
+									<a href="https://www.instagram.com/p/Bw65De0nb5S/" target="_blank">
+										<img src="img/ig-7.jpg" class="ig-pic img-fluid" alt="instagramfeed">
+									</a>
+								</div>
+								<div class="col-lg-4 col-md-4">
+									<a href="https://www.instagram.com/p/Besu9yNHsUJ/" target="_blank">
+										<img src="img/ig-8.jpg" class="ig-pic img-fluid" alt="instagramfeed">
+									</a>
+								</div>
+								<div class="col-lg-4 col-md-4">
+									<a href="https://www.instagram.com/p/BkRV4cZntjS/" target="_blank">
+										<img src="img/ig-9.jpg" class="ig-pic img-fluid" alt="instagramfeed">
+									</a>
+								</div>
+							</div>
+							<div class="text-center">
+								<a href="https://www.instagram.com/markozpaez/" target="_blank">
+									<button class="btn btn-success btn-lg btn-block">See More Photos</button>
+								</a>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="tab3primary">
+							<div class="row">
+								<div class="col-12 col-sm-12 col-md-9 col-lg-9"> 
+									<!-- <ul> -->
+										<!-- <li>First eBook</li> -->
+										<!-- <li>Second eBook</li> -->
+										<!-- <li>Third eBook</li> -->
+									<!-- </ul> -->
+									<h3>eBooks are coming soon...<h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</section>
+		<!-- End About Me -->
+		
+		<!-- Start Footer -->
+		<footer class="page-footer font-small black">
+
+			<!-- Social Media -->
+			<div class="text-center"> 
+				<span class="ml-1">Follow:</span>
+				<a href="https://www.facebook.com/markozpaez15/" class="fa fa-facebook social-media" target="_blank"></a>
+				<a href="https://www.instagram.com/markozpaez/" class="fa fa-instagram social-media" target="_blank"></a>
+				<a href="https://www.linkedin.com/in/markpaez1525/" class="fa fa-linkedin social-media" target="_blank"></a>
+			</div>
+		  <!-- Copyright -->
+			<div class="footer-copyright text-center py-3">Copyright © <span id="footerYear" class="ml-1"></span> | Markoz Paez | All Rights Reserved.</div>
+		  <!-- Copyright -->
+        
+		</footer>
+		<!-- End Footer -->
+		
+		<!-- Arrow Up -->
+		<span class="fa fa-chevron-up"></span>
+		
+		
+	</div>
+	<!-- Container Fluid -->
+	
+	
+	<!-- Start Email Form -->
+	<form class="gform pure-form pure-form-stacked" method="POST" data-email="markozpaez1525@gmail.com"
+			  action="https://script.google.com/macros/s/AKfycbyTDwH17RirkMhP11mJGSRBKdV4f8SnBzjFCh0kZ6LfwehiwkZL/exec">
+				<!-- change the form action to your script url -->
+				
+	
+		<!-- Start Form Elements -->
+		<div class="form-elements">
+		
+			<!-- Start Modal -->
+			<div class="modal" id="EmailCaptureModal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+
+						<!-- Start Modal Header -->
+						<div class="modal-header">
+							<h4 class="modal-title">Send me a message</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<!-- End Modal Header -->
+
+						<!-- Start Modal body -->
+						<div class="modal-body center">
+							<div class="form-group">
+								<input type="text" class="form-control" id="email" name="email" type="email" value="" required placeholder="*Your Email Address">
+								<span class="email-invalid badge badge-pill badge-warning" style="display:none">Must be a valid email address</span>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="name" name="name" type="name" value="" required placeholder="*Your Name">
+								<span class="blank-name badge badge-pill badge-warning" style="display:none">Please enter your name</span>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="phone" name="phone" type="phone" value="" required placeholder="*Your Phone">
+								<span class="blank-name badge badge-pill badge-warning" style="display:none">Please enter your phone</span>
+							</div>
+							<div class="form-group">
+								<textarea id="message" name="message" class="form-control" rows="8" placeholder="*Your Message"></textarea>
+								<span class="blank-message badge badge-pill badge-warning" style="display:none">Please enter your message</span>
+							</div>
+							<div class="form-group">
+								<span class="fa fa-lock"></span>
+								<span id="badge-confidential" class="ml-1">Your information will remain<span class="badge badge-danger">CONFIDENTIAL</span></span>				
+							</div>
+						</div>
+						<!-- End Modal body -->
+
+						<!-- Start Modal footer -->
+						<div class="modal-footer">
+							<button id="btnSendMessage" class="btn btn-success btn-lg btn-block">Submit Message</button>
+						</div>
+						<div id="contactOption">
+							<span class="font-weight-bold">You may contact me in WhatsApp:
+								<a class="a-link" href="tel:+639281274145">
+									<span class="badge badge-primary ml-5">+639281274145</span>
+								</a>
+							</span>
+							</br><span class="font-weight-bold">OR</span></br>
+							<span class="font-weight-bold">You may email me at:
+								<a class="a-link" href="mailto:markozpaez1525@gmail.com">
+									<span class="badge badge-primary ml-5">markozpaez1525@gmail.com</span>
+								</a>
+							</span>							
+						</div>
+						<!-- End Modal footer -->
+
+					</div>
+				</div>
+			</div>
+			<!-- End Modal -->
+		
+		</div>
+		<!-- End Form Elements -->
+	
+		<!-- Thank you message form -->
+		<div class="thankyou_message" style="display:none;"></div>
+	
+	</form>
+	<!-- End Email Form -->
+	
+	<!-- Start Success Send Message -->
+	<div id="modalSuccess" class="modal">
+
+		<div class="modal-dialog"> 
+			<!-- Modal content -->
+			<div class="alert alert-success">
+			  <strong><span>Success!</span></strong><span class="ml-1">Thank you for sending your message</span><span class="ml-1" id="spnSenderName"></span> 
+			</div>
+		</div>
+
+	</div>
+	<!-- End Success Send Message -->
+	
+	<!-- Riddle Modal -->
+	<div class="modal" id="modalRiddle">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">How are you?</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+
+				<!-- Modal body -->
+				<div class="modal-body center">
+					<div class="form-group">
+						<p>Please contact Markoz for the answer or you may answer the question below:</p>
+						<p>What is Markoz Pet Peeve?</p>
+						<input type="text" class="form-control" id="txtAnswerRiddle" value="" required placeholder="*Your Answer">
+						<span class="blank-answer badge badge-pill badge-warning" style="display:none">Please enter your answer</span>
+					</div>
+					<div>
+						<button id="btnAnswerRiddle" class="btn btn-success btn-lg btn-block">Submit Answer</button><br>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- Riddle Modal -->
+			
+	<!-- Emoji Modal -->
+	<div id="modalEmoji" class="modal text-center">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div id="emojiCorrect"> 
+					<h3>Awesome! You got it!</h3>
+					<p>&#128513;</p>
+				</div>
+				<div id="emojiWrong"> 
+					<h3>Sorry, wrong answer!</h3>
+					<p>&#128540;</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Emoji Modal -->
+	
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/fontawesome.min.js"></script>
+	
+	<!-- Optional JavaScript -->
+	<script type="text/javascript" src="js/jscript-main.js"></script>
+	
+	 <!-- Submit the Form to Google Using "AJAX" -->
+	<script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+
+  </body>
+</html>
