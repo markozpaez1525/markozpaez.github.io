@@ -4,10 +4,13 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	
@@ -21,39 +24,19 @@
 	<link rel="icon" href="img/img-title-icon.jpg"/>
     <title>Markoz Paez</title>
 	
-	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top fixed-top">
+	<div class="bg-navbar sticky-top fixed-top text-center">
+		<a id="navHome" href="index.html">
+			<img id="" src="img/img-banner-logo.png" class="img-fluid" alt="Logo">
+		</a>
+	</div>
+		
+	<nav class="navbar navbar-expand-lg sticky-top fixed-top">
 		<div style="display:none;" id="logoMobileMode">
-			<img src="img/img-banner-logo.jpg" class="img-fluid" alt="Logo">
+			<img src="img/img-banner-logo.png" class="img-fluid" alt="Logo">
 		</div>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul id="logo" class="navbar-nav">
-				<li class="nav-item">
-					<a href="index.html">
-						<img id="" src="img/img-banner-logo.jpg" class="img-fluid" alt="Logo">
-					</a>
-				</li>
-			</ul>
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a id="navHome" class="nav-link">Home</a>
-				</li>
-				<li class="nav-item">
-					<a id="navPortfolio" class="nav-link">Portfolio</a>
-				</li>
-				<li class="nav-item">
-					<a id="navBlogs" class="nav-link">Blogs</a>
-				</li>
-				<li class="nav-item">
-					<a id="navAbout" class="nav-link">About</a>
-				</li>
-				<li class="nav-item" data-toggle="modal" data-target="#EmailCaptureModal">
-					<a id="navContact" class="nav-link">Contact</a>
-				</li>
-			</ul>
-		</div>
 	</nav>
 	
   </head>
@@ -61,63 +44,132 @@
   <body>
 	
 	<div class="container-fluid"> 
-	
-		<!-- Start Home -->
-		<section id="myHome" class="section-gap section-bg-2">
-			<div class="row"> 
-				<div class="col-12 col-sm-12 col-md-12 col-lg-8"> 
-					<div class="embed-responsive embed-responsive-16by9">
-					  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/n5WiSkvFCMc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<!-- Landing Page -->
+		<section class="section-bg-black">
+		
+			<!-- 3D Slideshow Section --> 
+			<div id="slideshow-1">
+				<div class="entire-content">
+					<div class="content-carrousel text-center">
+						<figure class="shadow homeModal-1">
+							<h5>Portfolio</h5>
+							<img class="mx-auto" src="img/markoz-portfolio.jpg" alt="">
+						</figure>
+						<figure class="shadow homeModal-2">
+							<h5>Services</h5>
+							<img class="mx-auto" src="img/markoz-services.jpg" alt="">
+						</figure>
+						<figure class="shadow homeModal-3">
+							<h5>About</h5>
+							<img class="mx-auto" src="img/markoz-about.jpg" alt="">
+						</figure>
+						<figure class="shadow homeModal-4">
+							<h5>Blog</h5>
+							<img class="mx-auto" src="img/markoz-blog.jpg" alt="">
+						</figure>
 					</div>
 				</div>
-				<div class="col-12 col-sm-12 col-md-12 col-lg-4"> 
-					<p id="homeIntro" class="mt-20"></p>
-					<p id="homeDesc" class="mt-20"></p>
+			</div>
+			<!-- 3D Slideshow Section --> 
+			
+			<div id="slideshow-2" class="markoz-landing-page">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="markoz-portfolio">
+							<h2 id="navPortfolio">Portfolio</h2>
+							<div class="line"></div>
+						</div>
+						<div class="markoz-services">
+							<h2 id="navServices">Services</h2>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="markoz-contact">
+							<h2 id="navContact" class="nav-item" data-toggle="modal" data-target="#EmailCaptureModal">Contact</h2>
+						</div>
+						<div class="markoz-social-media">
+							<div class="text-center"> 
+								<a href="https://www.facebook.com/markozpaez15/" class="fa fa-facebook social-media" target="_blank"></a>
+								<a href="https://www.instagram.com/markozpaez/" class="fa fa-instagram social-media" target="_blank"></a>
+								<a href="https://www.linkedin.com/in/markpaez1525/" class="fa fa-linkedin social-media" target="_blank"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="markoz-about">
+							<h2 id="navAbout">About</h2>
+						</div>
+						<div class="markoz-blog">
+							<h2 id="navBlogs">Blog</h2>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
-		<!-- End Home -->
-
-		<!-- Start Portfolio -->
-		<section class="section-gap">
-			<div id="myPortfolio"> 
-			<div class="text-center mb-40"> 
-				<h1 class="section-title">----------Portfolio---------</h1>
+		<!-- Landing Page -->
+		<section class="section-bg-black">
+			<div id="div-bird">
+				<img id="img-bird" src="img/bird.gif" alt="Bird"> 
 			</div>
-			<article id="" class="mt-20">
+		</section>
+		<!-- Start Portfolio -->
+		<section class="section-gap section-bg-black">
+			<div id="myPortfolio"> 
+			<div class="text-center mb-80"> 
+				<h1 class="section-title">----------PORTFOLIO---------</h1>
+			</div>
+			<article class="mt-20">
 
-				<div id="carousel">
+				<div id="carousel" class="gradient-buttons">
 					<ul class="flip-items">
 
 						<li data-flip-title="Corporate" class="text-center">
-							<img id="" src="img/img-text-1.jpg" class="img-fluid"  alt="Portfolio"><br>
-							<a href="http://www.remotech.ga" target="_blank">
-								<span class="btn btn-primary mt-10">Visit Site</span>
-							</a>
+							<img id="" src="img/img-text-1.jpg" class="img-fluid"  alt="Portfolio">
+							<div>
+								<a href="https://remotech.ga" target="_blank">
+									<button type="button" class="btn btn-primary portfolio-btn mt-10" >Visit Site</button>	
+								</a>
+							</div>
 						 </li>
 						 <li data-flip-title="Travel" class="text-center">
-							<img id="" src="img/img-text-2.jpg"  class="img-fluid" alt="Portfolio"><br>
-							<a href="https://bit.ly/markoztravel" target="_blank">
-								<span class="btn btn-primary mt-10">Visit Site</span>
-							</a>
+							<img id="" src="img/img-text-2.jpg"  class="img-fluid" alt="Portfolio">
+							<div>
+								<a href="https://bit.ly/markoztravel" target="_blank">
+									<button type="button" class="btn btn-primary portfolio-btn mt-10" >Visit Site</button>	
+								</a>
+							</div>
+						 </li >
+						  <li data-flip-title="Blog" class="text-center">
+							<img id="" src="img/img-text-6.png"  class="img-fluid" alt="Portfolio">
+							<div>
+								<a href="https://iloilowander.tk/" target="_blank">
+									<button type="button" class="btn btn-primary portfolio-btn mt-10" >Visit Site</button>	
+								</a>
+							</div>
 						 </li >
 						 <li data-flip-title="Real Estate" class="text-center">
-							<img id="" src="img/img-text-3.jpg"  class="img-fluid" alt="Portfolio"><br>
-							<a href="https://bit.ly/markrealestate" target="_blank">
-								<span class="btn btn-primary mt-10">Visit Site</span>
-							</a>
+							<img id="" src="img/img-text-3.jpg"  class="img-fluid" alt="Portfolio">
+							<div>
+								<a href="https://bit.ly/markrealestate" target="_blank">
+									<button type="button" class="btn btn-primary portfolio-btn mt-10" >Visit Site</button>	
+								</a>
+							</div>
 						 </li>
 						 <li data-flip-title="Food" class="text-center">
 							<img id="" src="img/img-text-4.jpg"  class="img-fluid" alt="Portfolio"><br>
-							<a href="https://bit.ly/markrestaurant" target="_blank">
-								<span class="btn btn-primary mt-10">Visit Site</span>
-							</a>
+							<div>
+								<a href="https://bit.ly/markrestaurant" target="_blank">
+									<button type="button" class="btn btn-primary portfolio-btn mt-10" >Visit Site</button>	
+								</a>
+							</div>
 						 </li>
 						 <li data-flip-title="Pets" class="text-center">
 							<img id="" src="img/img-text-5.png"  class="img-fluid" alt="Portfolio"><br>
-							<a href="https://bit.ly/markozpets" target="_blank">
-								<span class="btn btn-primary mt-10">Visit Site</span>
-							</a>
+							<div>
+								<a href="https://bit.ly/markozpets" target="_blank">
+									<button type="button" class="btn btn-primary portfolio-btn mt-10" >Visit Site</button>	
+								</a>
+							</div>
 						 </li>
 						
 					</ul>
@@ -137,198 +189,271 @@
 			</div>
 		</section>
 		<!-- End Portfolio -->
-
+		<!-- Start Services -->
+		<section id="myServices" class="section-gap section-bg-black">
+			<div class="text-center mb-80"> 
+				<h1 class="section-title">----------SERVICES---------</h1>
+			</div>
+			<div class="row"> 
+				<div class="col-12 col-sm-12 col-md-12 col-lg-5 text-center animated slideInDown delay-5s"> 
+					<h2 class=""><p>Looking for Web Developer?</p><h2>
+					<h5><p>This is the Right Place</p><h5>
+					<p>I am creating:</p>
+					<table class="table text-white">
+						<tbody>
+							<tr>
+							<th scope="row"><i class="fas fa-check"></i> Landing Pages</th>
+							</tr>
+							<tr>
+							<th scope="row"><i class="fas fa-check"></i> Static Mobile Responsive Website</th>
+							</tr>
+							<tr>
+							<th scope="row"><i class="fas fa-check"></i> Wordpress Website with Elementor</th>
+							</tr>
+							<tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-2 text-center  animated slideInUp delay-5s"> 
+					<div class="gradient-buttons">
+						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#EmailCaptureModal">HIRE ME</button>
+					</div>
+					</br>
+					<a href="https://www.upwork.com/o/profiles/users/~010695747bad43fd9e/" target="_blank">
+						<img id="" src="img/upwork-logo.png" class="img-fluid"  alt="mobile-reponsive">
+					</a>
+					<div class="mt-20">
+						<h5><p>I used:</p><h5>
+					</div>
+					<div class="mt-20">
+						<img id="" src="img/html-css-js.png" class="img-fluid"  alt="mobile-reponsive">
+					</div>
+					<div class="row mt-20">
+						<div class="col-lg-6">
+							<img id="" src="img/bootstrap-logo.png" class="img-fluid"  alt="mobile-reponsive">
+							
+						</div>
+						<div class="col-lg-6">
+							<img id="" src="img/elementor-logo.png" class="img-fluid"  alt="mobile-reponsive">
+						</div>
+					</div>
+					<div class="row mt-20">
+						<div class="col-lg-6">
+							<img id="" src="img/jquery-logo.png" class="img-fluid"  alt="mobile-reponsive">
+							
+						</div>
+						<div class="col-lg-6">
+							<img id="" src="img/wordpress-logo.png" class="img-fluid"  alt="mobile-reponsive">
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-5 text-center  animated slideInUp delay-5s"> 
+					<img id="imgMobileResponsive" src="img/mobile-reponsive.jpg" class="img-fluid"  alt="mobile-reponsive">
+				</div>
+			</div>
+		</section>
+		<!-- End Services -->
+		
 		<!-- Start Blogs -->
 		<section class="section-gap section-bg-2">
 			<div id="myBlogs"> 
-				<div class="text-center mb-40"> 
-					<h1 class="section-title">----------Blogs---------</h1>
-					<p class="mt-20">This section is my venue to express my thoughts and opinions about the things that I had experienced, observed, learned and sometimes imagination ko lang. :)</p>
-				</div>
-				<div class="row mt-20"> 
-					<div class="col-12 col-sm-12 col-md-6 col-lg-3"> 
-						<div class="card border-general zoom text-center">
-						  <img src="img/img-copywriting.png" class="card-img-top" alt="Card Image">
-						  <div class="card-body">
-							<h6 class="card-title">Valuable Tips on How to be a Copywriter</h6>
-							<p class="card-text"></p>
-								<div data-toggle="tooltip" data-placement="top" title="Disclaimer: I am not the author of this copy. My intention is to share what I had discovered for those who are interested to be a copywriter. Credit to the owner of this copy. Click and download if you are interested.">
-									<a href="docs/Copywriting.pdf" target="_blank" class="a-link" download><span>Download Copywriting Tips</span></a>
-									
+				<div class="container">
+					<div class="text-center mb-60"> 
+						<h1 class="section-title text-white">----------BLOGS---------</h1>
+						<p class="mt-40 text-white">This section is my venue to express my thoughts and opinions about the things that I had experienced, observed, learned and sometimes imagination ko lang. :)</p>
+					</div>
+					<div class="row mt-20"> 
+						<div class="col-12 col-sm-12 col-md-6 col-lg-3"> 
+							<div class="card border-general text-center">
+							  <img src="img/img-copywriting.png" class="card-img-top" alt="Card Image">
+							  <div class="card-body">
+								<h6 class="card-title">Valuable Tips on How to be a Copywriter</h6>
+								<p class="card-text"></p>
+									<div data-toggle="tooltip" data-placement="top" title="Disclaimer: I am not the author of this copy. My intention is to share what I had discovered for those who are interested to be a copywriter. Credit to the owner of this copy. Click and download if you are interested.">
+										<a href="docs/Copywriting.pdf" target="_blank" download><span>Download Copywriting Tips</span></a>
+										
+									</div>
+							  </div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-12 col-md-6 col-lg-3"> 
+							<div class="card border-general">
+							  <img src="img/img-heart.png" class="card-img-top" alt="Card Image">
+							  <div class="card-body">
+								<h6 class="card-title">Why do we need to Fall for the Wrong Person atleast once?</h6>
+								<p class="card-text"></p>
+								<div data-toggle="tooltip" data-placement="top" title="Oops! May HUGOT ka? May 'LOVE LIFE' KA? Ha? Ha? Ha? Click na!">
+								<a href="#" target="_blank" >Hugot pa more...</a>
 								</div>
-						  </div>
-						</div>
-					</div>
-					<div class="col-12 col-sm-12 col-md-6 col-lg-3"> 
-						<div class="card border-general zoom">
-						  <img src="img/img-heart.png" class="card-img-top" alt="Card Image">
-						  <div class="card-body">
-							<h6 class="card-title">Why do we need to Fall for the Wrong Person atleast once?</h6>
-							<p class="card-text"></p>
-							<div data-toggle="tooltip" data-placement="top" title="Oops! May HUGOT ka? May 'LOVE LIFE' KA? Ha? Ha? Ha? Click na!">
-							<a href="#" target="_blank" class="a-link">Hugot pa more...</a>
+							  </div>
 							</div>
-						  </div>
 						</div>
-					</div>
-					<div class="col-12 col-sm-12 col-md-6 col-lg-3"> 
-						<div class="card border-general zoom">
-						  <img src="img/img-people.png" class="card-img-top" alt="Card Image">
-						  <div class="card-body">
-							<h6 class="card-title">What are the Habits of Successful People?</h6>
-							<p class="card-text"></p>
-							<div data-toggle="tooltip" data-placement="top" title="Nakz! Gusto mong yumaman? Cge, learn more here!">
-							<a href="#" target="_blank" class="a-link">Learn more...</a>
+						<div class="col-12 col-sm-12 col-md-6 col-lg-3"> 
+							<div class="card border-general">
+							  <img src="img/img-people.png" class="card-img-top" alt="Card Image">
+							  <div class="card-body">
+								<h6 class="card-title">What are the Habits of Successful People?</h6>
+								<p class="card-text"></p>
+								<div data-toggle="tooltip" data-placement="top" title="Nakz! Gusto mong yumaman? Cge, learn more here!">
+								<a href="#" target="_blank" >Learn more...</a>
+								</div>
+							  </div>
 							</div>
-						  </div>
 						</div>
-					</div>
-					<div class="col-12 col-sm-12 col-md-6 col-lg-3"> 
-						<div class="card border-general zoom">
-						  <img src="img/img-travel.png" class="card-img-top" alt="Card Image">
-						  <div class="card-body">
-							<h6 class="card-title">How to travel in Iloilo City and live like local?</h6>
-							<p class="card-text"></p>
-							<div data-toggle="tooltip" data-placement="top" title="Information about Iloilo City! Malagaw ka sa Iloilo? This is your guide.">
-							<a href="#" target="_blank" class="a-link">Let's go...</a>
+						<div class="col-12 col-sm-12 col-md-6 col-lg-3"> 
+							<div class="card border-general">
+							  <img src="img/img-travel.png" class="card-img-top" alt="Card Image">
+							  <div class="card-body">
+								<h6 class="card-title">How to travel in Iloilo City and live like local?</h6>
+								<p class="card-text"></p>
+								<div data-toggle="tooltip" data-placement="top" title="Information about Iloilo City! Malagaw ka sa Iloilo? This is your guide.">
+								<a href="https://iloilowander.tk/" target="_blank" >Let's go...</a>
+								</div>
+							  </div>
 							</div>
-						  </div>
 						</div>
 					</div>
+
 				</div>
+				
 			</div>
 		</section>
 		<!-- End Blogs -->		
 		
 		<!--Start Quotes -->
-		<section class="section-gap section-bg-1">
+		<section class="section-gap section-bg-5">
 			<div id="myQuotesToLiveBy">
-				<div class="text-center mb-40"> 
-					<h1 class="section-title">----------Quote & Quote---------</h1>
-					<p class="mt-20">These are the quotes that I loved to live by.</p>
-				</div>
-			
-				<!-- Start Quotes First Batch -->
-				<div class="row mt-20">
-				
-					<div class="col-12 col-sm-4 col-md-4">
-						<div class="ribbon-card">
-							<div class="copy">
-								"What we are is God's gift to us. What we become is our gift to GOD."
-							</div>
-							<div class="ribbon">
-								Quote #: 1
-							</div>
-						</div>
+				<div class="container">
+					<div class="text-center mb-40"> 
+						<h1 class="section-title">----------QUOTES----------</h1>
+						<p class="mt-20">These are the quotes that I loved to live by.</p>
 					</div>
-					<div class="col-12 col-sm-4 col-md-4">
-						<div class="ribbon-card">
-							<div class="copy">
-								"God has two dwellings: One in Heaven, and the other in a Meek and Thankful Heart."
-							</div>
-							<div class="ribbon">
-								Quote #: 2
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-sm-4 col-md-4">
-						<div class="ribbon-card">
-							<div class="copy">
-								"The BEST things in Life are just simple things, what you have to do is to appreciate it."
-							</div>
-							<div class="ribbon">
-								Quote #: 3
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- End Quotes First Batch -->
+					<!-- Start Quotes First Batch -->
+					<div class="row mt-20">
 					
-				<!-- Start Quotes Second Batch -->
-				<div class="row">
-					<div class="col-12 col-sm-4">
-						<div class="ribbon-card">
-							<div class="copy">
-								"When you are literally Hungry, that's the time you will really appreciate Food, Money and Health."
+						<div class="col-12 col-sm-4 col-md-4">
+							<div class="ribbon-card">
+								<div class="copy">
+									"What we are is God's gift to us. What we become is our gift to GOD."
+								</div>
+								<div class="ribbon">
+									Quote #: 1
+								</div>
 							</div>
-							<div class="ribbon">
-								Quote #: 4
+						</div>
+						<div class="col-12 col-sm-4 col-md-4">
+							<div class="ribbon-card">
+								<div class="copy">
+									"God has two dwellings: One in Heaven, and the other in a Meek and Thankful Heart."
+								</div>
+								<div class="ribbon">
+									Quote #: 2
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-4 col-md-4">
+							<div class="ribbon-card">
+								<div class="copy">
+									"The BEST things in Life are just simple things, what you have to do is to appreciate it."
+								</div>
+								<div class="ribbon">
+									Quote #: 3
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-4">
-						<div class="ribbon-card">
-							<div class="copy">
-								"Dream as if you'll live Forever. Live as if you'll Die Today."
-							</div>
-							<div class="ribbon">
-								Quote #: 5
-							</div>
-						</div>		  
-					</div>
-					<div class="col-12 col-sm-4">
-						<div class="ribbon-card">
-							<div class="copy">
-								"All of US have the Power of Choice. I chose to be Rich and I make that Choice Everyday."
-							</div>
-							<div class="ribbon">
-								Quote #: 6
-							</div>
-						</div>		  
-					</div>
-				</div>
-				<!-- End Quotes Second Batch -->
-					
-				<!-- Start Quotes Third Batch -->
-				<div class="row">
-					<div class="col-12 col-sm-4">
-						<div class="ribbon-card">
-							<div class="copy">
-								"Always be True to Yourself, in that way, Happiness is Easy."
-							</div>
-							<div class="ribbon">
-								Quote #: 7
+					<!-- End Quotes First Batch -->
+						
+					<!-- Start Quotes Second Batch -->
+					<div class="row">
+						<div class="col-12 col-sm-4">
+							<div class="ribbon-card">
+								<div class="copy">
+									"When you are literally Hungry, that's the time you will really appreciate Food, Money and Health."
+								</div>
+								<div class="ribbon">
+									Quote #: 4
+								</div>
 							</div>
 						</div>
+						<div class="col-12 col-sm-4">
+							<div class="ribbon-card">
+								<div class="copy">
+									"Dream as if you'll live Forever. Live as if you'll Die Today."
+								</div>
+								<div class="ribbon">
+									Quote #: 5
+								</div>
+							</div>		  
+						</div>
+						<div class="col-12 col-sm-4">
+							<div class="ribbon-card">
+								<div class="copy">
+									"All of US have the Power of Choice. I chose to be Rich and I make that Choice Everyday."
+								</div>
+								<div class="ribbon">
+									Quote #: 6
+								</div>
+							</div>		  
+						</div>
 					</div>
-					<div class="col-12 col-sm-4">
-						<div class="ribbon-card">
-							<div class="copy">
-								"The Greatest Happiness can be achieved by making other People Happy."
+					<!-- End Quotes Second Batch -->
+						
+					<!-- Start Quotes Third Batch -->
+					<div class="row">
+						<div class="col-12 col-sm-4">
+							<div class="ribbon-card">
+								<div class="copy">
+									"Always be True to Yourself, in that way, Happiness is Easy."
+								</div>
+								<div class="ribbon">
+									Quote #: 7
+								</div>
 							</div>
-							<div class="ribbon">
-								Quote #: 8
-							</div>
-						</div>		  
+						</div>
+						<div class="col-12 col-sm-4">
+							<div class="ribbon-card">
+								<div class="copy">
+									"The Greatest Happiness can be achieved by making other People Happy."
+								</div>
+								<div class="ribbon">
+									Quote #: 8
+								</div>
+							</div>		  
+						</div>
+						<div class="col-12 col-sm-4">
+							<div class="ribbon-card">
+								<div class="copy">
+									"The surest way to be decieved is to think one's self more clever than others."
+								</div>
+								<div class="ribbon">
+									Quote #: 9
+								</div>
+							</div>		  
+						</div>
 					</div>
-					<div class="col-12 col-sm-4">
-						<div class="ribbon-card">
-							<div class="copy">
-								"The surest way to be decieved is to think one's self more clever than others."
-							</div>
-							<div class="ribbon">
-								Quote #: 9
-							</div>
-						</div>		  
-					</div>
+					<!-- End Quotes Third Batch -->
 				</div>
-				<!-- End Quotes Third Batch -->
-					
 			</div>
 		</section>
 		<!-- End Quotes -->
 		
-		<section>
-			<div id="div-bird">
-				<img id="img-bird" src="img/bird.gif" alt="Bird"> 
-			</div>
-		</section>
-		
 		<!-- Start About Me -->
-		<section class="section-gap section-bg-3">
+		<section class="section-gap section-bg-black">
 			<div id="myPersonalInfo" class=""> 
-			<div class="text-center mb-40"> 
-					<h1 class="section-title">----------Meet Markoz----------</h1>
+			<div class="container mb-40"> 
+				<div class="row"> 
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 author-info"> 
+						<img id="img-author" src="img/img-author.jpeg" class="rounded border-general border-general-info" alt="Author">
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 my-auto author-info">
+						<h3 class="mt-10 font-weight-bold">MARKOZ PAEZ</h3>
+						<span class="font-weight-bold">Phone/WhattsApp:</span><a class="a-link" href="tel:+639281274145"><br><span>+639281274145</span></a><br>
+						<span class="font-weight-bold">Email:</span><a class="a-link" href="mailto:markozpaez1525@gmail.com"><br><span>markozpaez1525@gmail.com</span></a><br>
+						<span class="font-weight-bold">Address:</span><br><span>Iloilo City 5000, Philippines</span>
+						
+					</div>
+				</div>
 			</div>
 			<div class="panel with-nav-tabs panel-primary">
 				<div class="panel-heading">
@@ -343,39 +468,28 @@
 						<div class="tab-pane fade" id="tab1primary">
 							<div class="row">
 								<div class="col-12 col-sm-12 col-md-12 col-lg-12"> 
-									<div class="row"> 
-										<div class="col-12 col-sm-12 col-md-6 col-lg-6 author-info"> 
-											<img id="img-author" src="img/img-author.jpeg" class="rounded border-general border-general-info" alt="Author">
-										</div>
-										<div class="col-12 col-sm-12 col-md-6 col-lg-6 my-auto author-info">
-											<h3 class="mt-10 font-weight-bold">MARKOZ PAEZ</h3>
-											<span class="font-weight-bold">Phone/WhattsApp:</span><a class="a-link" href="tel:+639281274145"><br><span>+639281274145</span></a><br>
-											<span class="font-weight-bold">Email:</span><a class="a-link" href="mailto:markozpaez1525@gmail.com"><br><span>markozpaez1525@gmail.com</span></a><br>
-											<span class="font-weight-bold">Address:</span><br><span>Iloilo City 5000, Philippines</span>
-											
-										</div>
-									</div>
+									
 									
 									<div class="row mt-20"> 
-										<div class="col-12 col-sm-12 col-md-12 col-lg-12"> 
+										<div class="col-12 col-sm-12 col-md-12 col-lg-6"> 
 											<fieldset class="fieldset-quote"> 
 											<legend class="fieldset-legend">PROFESSIONAL SUMMARY</legend>
-												<span>Experienced working in web development industry for more than 4 years by developing websites using Bootstrap, Javascript, CSS, HTML and mostly front-end development.</span>
+												<p>Experienced Virtual Assistant with a demonstrated history of working in the outsourcing/offshoring industry and also in web development industry for more than 4 years by developing websites using Bootstrap, Javascript, CSS, HTML and jQuery and mostly front-end development. I'm using Wordpress as CMS and Elementor as web page builder.</p>
+												<p>Strong administrative professional with a Bachelor of Science (BS) focused in Computer Engineering.</p>
 											</fieldset>
+											
 										</div>
-									</div>
-										
-									<div class="row mt-20"> 
-										<div class="col-12 col-sm-12 col-md-12 col-lg-12"> 
+										<div class="col-12 col-sm-12 col-md-12 col-lg-6"> 
 											<fieldset class="fieldset-quote"> 
 											<legend class="fieldset-legend">SKILLS</legend>
-												<span>
+												<p>
 												•	Bootstrap, JQuery, Javascript, CSS and HTML<br>
+												•	Wordpress with Elementor<br>	
 												•	Data Entry<br>	
 												•	Customer Service<br>	
 												•	Social Media Manager<br>	
 												•	ConnectWise Email Marketing	
-												</span>
+												</p>
 											</fieldset>
 										</div>
 									</div>
@@ -390,9 +504,9 @@
 									<div id="authorExperience" class="row mt-20"> 
 										<div class="col-12 col-sm-12 col-md-12 col-lg-12"> 
 											<fieldset class="fieldset-quote"> 
-											<legend class="fieldset-legend">EXPERIENCES</legend>
-												<span  class="font-weight-bold">
-													Virtual Assistant<br>
+											<legend class="fieldset-legend">PROFESSIONAL EXPERIENCES</legend>
+												<span  class="font-weight-bold"><br>
+													<u>Virtual Assistant</u><br>
 													Upwork | Iloilo City, Iloilo 5000<br>
 													July 2015 - Current<br>
 												</span>
@@ -403,7 +517,7 @@
 												•	Tracking orders<br><br>
 												</span>
 												<span  class="font-weight-bold">
-													Customer Service Representative<br>
+													<u>Customer Service Representative</u><br>
 													Transcom Worldwide Philippines | Iloilo City, Iloilo 5000<br>
 													February 2015 – May 2015<br>
 												</span>
@@ -413,7 +527,7 @@
 
 												</span>
 												<span  class="font-weight-bold">
-													Web Developer<br>
+													<u>Web Developer</u><br>
 													Sell2Any B.V. | Iloilo City, Iloilo 5000<br>
 													June 2014 – November 2014<br>
 												</span>
@@ -421,7 +535,7 @@
 												•	Convert PSD web design into HTML file using bootstrap<br><br>
 												</span>
 												<span  class="font-weight-bold">
-													Web Developer<br>
+													<u>Web Developer</u><br>
 													HP Outsourcing Philippines, Inc. | Davao City 8000<br>
 													October 2013 – March 2014<br>
 												</span>
@@ -429,7 +543,7 @@
 												•	Helped Team developed Funnel Websites using WordPress<br><br>
 												</span>
 												<span  class="font-weight-bold">
-													Software Programmer<br>
+													<u>Software Programmer</u><br>
 													Geodata Solutions Inc. | Koronadal City 9506<br>
 													July 2009 – September 2013<br>
 												</span>
@@ -464,81 +578,69 @@
 						
 						</div>
 						<div class="active tab-pane fade" id="tab2primary">
-							<!-- <div class="row justify-content-center">  -->
-								<!-- <div class="col-12 col-sm-12 col-md-12 col-lg-12 mt-20 text-center">  -->
-									<!-- <!-- SnapWidget --> 
-									<!-- <!-- <script src="https://snapwidget.com/js/snapwidget.js"></script> -->
-
-									<!-- <h3 class="section-title mb-50">Follow Me on Instagram</h3> -->
-									<!-- <!-- <script src="js/instagram.js"></script> --> 
-									<!-- <!-- <iframe src="https://snapwidget.com/embed/824882" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; "></iframe> --> 
-									
-									
-									<!-- <a href="https://www.instagram.com/markozpaez/" target="_blank"> -->
-										<!-- <button class="btn btn-success btn-lg btn-block">See More Photos</button> -->
-									<!-- </a> -->
-								<!-- </div> -->
-							<!-- </div> -->
 							
-							<div class="text-center">
-								<h3 class="section-title mt-10 mb-30">Follow Me on Instagram</h3>
-							</div>
-							
-							<div class="row">
-								<div class="col-lg-4 col-md-4">
-									<a href="https://www.instagram.com/p/Bz9anmQHLHZ/" target="_blank">
-										<img src="img/ig-1.jpg" class="ig-pic img-fluid" alt="instagramfeed">
+							<div class="container">
+								<div class="text-center">
+									<h3 class="section-title mt-10 mb-30">Follow Me on Instagram</h3>
+								</div>
+								<div class="row">
+									<div class="col-lg-4 col-md-4">
+										<a href="https://www.instagram.com/p/Bz9anmQHLHZ/" target="_blank">
+											<img src="img/ig-1.jpg" class="ig-pic img-fluid" alt="instagramfeed">
+										</a>
+									</div>
+									<div class="col-lg-4 col-md-4">
+										<a href="https://www.instagram.com/p/Bz0XfMXgYV4/" target="_blank">
+											<img src="img/ig-2.jpg" class="ig-pic img-fluid" alt="instagramfeed">
+										</a>
+									</div>
+									<div class="col-lg-4 col-md-4">
+										<a href="https://www.instagram.com/p/BjGmcnXHkXo/" target="_blank">
+											<img src="img/ig-3.jpg" class="ig-pic img-fluid" alt="instagramfeed">
+										</a>
+									</div>
+								</div>	
+								<div class="row">
+									<div class="col-lg-4 col-md-4">
+										<a href="https://www.instagram.com/p/BjbOqn5H-lT/" target="_blank">
+											<img src="img/ig-4.jpg" class="ig-pic img-fluid" alt="instagramfeed">
+										</a>
+									</div>
+									<div class="col-lg-4 col-md-4">
+										<a href="https://www.instagram.com/p/BiA9T5LnVOm/" target="_blank">
+											<img src="img/ig-5.jpg" class="ig-pic img-fluid" alt="instagramfeed">
+										</a>
+									</div>
+									<div class="col-lg-4 col-md-4">
+										<a href="https://www.instagram.com/p/BkJsJKUnydo/" target="_blank">
+											<img src="img/ig-6.jpg" class="ig-pic img-fluid" alt="instagramfeed">
+										</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-4 col-md-4">
+										<a href="https://www.instagram.com/p/Bw65De0nb5S/" target="_blank">
+											<img src="img/ig-7.jpg" class="ig-pic img-fluid" alt="instagramfeed">
+										</a>
+									</div>
+									<div class="col-lg-4 col-md-4">
+										<a href="https://www.instagram.com/p/Besu9yNHsUJ/" target="_blank">
+											<img src="img/ig-8.jpg" class="ig-pic img-fluid" alt="instagramfeed">
+										</a>
+									</div>
+									<div class="col-lg-4 col-md-4">
+										<a href="https://www.instagram.com/p/BkRV4cZntjS/" target="_blank">
+											<img src="img/ig-9.jpg" class="ig-pic img-fluid" alt="instagramfeed">
+										</a>
+									</div>
+								</div>
+								<div class="text-center">
+									<a href="https://www.instagram.com/markozpaez/" target="_blank">
+										<div class="gradient-buttons">
+											<button type="button" class="btn btn-primary btn-lg">See More Photos...</button>
+										</div>
 									</a>
 								</div>
-								<div class="col-lg-4 col-md-4">
-									<a href="https://www.instagram.com/p/Bz0XfMXgYV4/" target="_blank">
-										<img src="img/ig-2.jpg" class="ig-pic img-fluid" alt="instagramfeed">
-									</a>
-								</div>
-								<div class="col-lg-4 col-md-4">
-									<a href="https://www.instagram.com/p/BjGmcnXHkXo/" target="_blank">
-										<img src="img/ig-3.jpg" class="ig-pic img-fluid" alt="instagramfeed">
-									</a>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-4 col-md-4">
-									<a href="https://www.instagram.com/p/BjbOqn5H-lT/" target="_blank">
-										<img src="img/ig-4.jpg" class="ig-pic img-fluid" alt="instagramfeed">
-									</a>
-								</div>
-								<div class="col-lg-4 col-md-4">
-									<a href="https://www.instagram.com/p/BiA9T5LnVOm/" target="_blank">
-										<img src="img/ig-5.jpg" class="ig-pic img-fluid" alt="instagramfeed">
-									</a>
-								</div>
-								<div class="col-lg-4 col-md-4">
-									<a href="https://www.instagram.com/p/BkJsJKUnydo/" target="_blank">
-										<img src="img/ig-6.jpg" class="ig-pic img-fluid" alt="instagramfeed">
-									</a>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-4 col-md-4">
-									<a href="https://www.instagram.com/p/Bw65De0nb5S/" target="_blank">
-										<img src="img/ig-7.jpg" class="ig-pic img-fluid" alt="instagramfeed">
-									</a>
-								</div>
-								<div class="col-lg-4 col-md-4">
-									<a href="https://www.instagram.com/p/Besu9yNHsUJ/" target="_blank">
-										<img src="img/ig-8.jpg" class="ig-pic img-fluid" alt="instagramfeed">
-									</a>
-								</div>
-								<div class="col-lg-4 col-md-4">
-									<a href="https://www.instagram.com/p/BkRV4cZntjS/" target="_blank">
-										<img src="img/ig-9.jpg" class="ig-pic img-fluid" alt="instagramfeed">
-									</a>
-								</div>
-							</div>
-							<div class="text-center">
-								<a href="https://www.instagram.com/markozpaez/" target="_blank">
-									<button class="btn btn-success btn-lg btn-block">See More Photos</button>
-								</a>
 							</div>
 						</div>
 						<div class="tab-pane fade" id="tab3primary">
@@ -633,7 +735,10 @@
 
 						<!-- Start Modal footer -->
 						<div class="modal-footer">
-							<button id="btnSendMessage" class="btn btn-success btn-lg btn-block">Submit Message</button>
+							<!-- <button id="btnSendMessage" class="btn btn-success btn-lg btn-block">Submit Message</button> -->
+							<div class="gradient-buttons">
+								<button id="btnSendMessage" type="button" class="btn btn-primary btn-lg">Submit Message</button>
+							</div>
 						</div>
 						<div id="contactOption">
 							<span class="font-weight-bold">You may contact me in WhatsApp:

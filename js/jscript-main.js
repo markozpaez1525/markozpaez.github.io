@@ -3,11 +3,6 @@
 
 	jQuery(document).ready(function(){
 		
-		/* Carousel Display */ 
-		$('.carousel').carousel({
-		  interval: 30000
-		})
-		
 		/* ToolTip */ 
 		$('[data-toggle="tooltip"]').tooltip();
 
@@ -27,37 +22,44 @@
 			slideUpDown("0", "0");
 		}
 		
-		function clearTextBox(){
-			
-		}
-		
 		/* Navigation ScrollTo */ 
 		$("#navHome").click(function() {
-			slideUpDown(document.getElementById('myHome'), -150);
+			slideUpDown(document.getElementById('myHome'), -200);
 		});
 		$("#navPortfolio").click(function() {
-			slideUpDown(document.getElementById('myPortfolio'), -100);
-		});		
+			slideUpDown(document.getElementById('myPortfolio'), -150);
+		});	
+		$("#navServices").click(function() {
+			slideUpDown(document.getElementById('myServices'), -150);
+		});			
 		$("#navBlogs").click(function() {
-			slideUpDown(document.getElementById('myBlogs'), -90);
+			slideUpDown(document.getElementById('myBlogs'), -150);
 		});
 		$("#navAbout").click(function() {
-			slideUpDown(document.getElementById('myPersonalInfo'), -75);
+			slideUpDown(document.getElementById('myPersonalInfo'), -150);
 		});
 		$("#navContact").click(function() {
 			$('#email, #name, #phone, #message').val('');
 			$('.badge-warning').hide();
 		});
 		$(".fa-chevron-up").click(function() {
-			slideUpDown(document.getElementById('myPortfolio'), -1000);
+			slideUpDown(document.getElementById('myPortfolio'), -1500);
 		});
 		
 		/* Hide Flipster Next&Prev Button*/
 		$('.flipster__button').hide();
 		
-		/* Hide Markoz Job Experiences*/
-		$('#authorExperience, #authorEducation, #readMoreMinus').hide();
 		
+		//------- 3D Landing Page event  js --------//  
+		$('#slideshow-2').hide(); 
+		$('#slideshow-1').show(); 
+		
+		$('.shadow').hover(function(){
+			$('#slideshow-1').addClass('animated hinge delay-5s');
+			$('#slideshow-1').hide(); 
+			$('#slideshow-2').show(); 
+			$('#slideshow-2').addClass('animated zoomIn delay-5s');
+		});
 		
 		
 		/* Tab - Personal Information */ 
@@ -79,12 +81,17 @@
 			$('li a[href="#tab3primary"]').parent().addClass('active');
 		});
 		
+		/* Hide Markoz Job Experiences*/
+		$('#authorExperience, #authorEducation, #readMoreMinus').hide();
+		
 		
 		// Click Job Experience
 		$('#readMorePlus').click(function() {
 			$('#txtAnswerRiddle').val('');
 			$('.blank-answer').hide();
-			$('#modalRiddle').modal();
+			//$('#modalRiddle').modal();
+			$('#readMorePlus').hide();
+			$('#authorExperience, #authorEducation, #readMoreMinus').show();
 		});
 		$('#readMoreMinus').click(function() {
 			$('#authorExperience, #authorEducation, #readMoreMinus').hide();
@@ -111,38 +118,6 @@
 				$('#modalRiddle').modal('toggle');
 			}
 		});
-		
-		/* Home Introduction */
-		var intro = 0;
-		var txtSpeed = 50;
-		var txtHomeIntro = "Are you looking for a Web Developer? If yes, then you are in the right place! Hire me!";
-
-		function typeWriterIntro() {
-			
-			var p1 = "homeIntro";
-			if (intro < txtHomeIntro.length) {
-				document.getElementById(p1).innerHTML += txtHomeIntro.charAt(intro);
-				intro++;
-				setTimeout(typeWriterIntro, txtSpeed);
-			}
-		}
-		
-		typeWriterIntro();
-				
-		var intro2 = 0;
-		var txtSpeed2 = 50;
-		var txtHomeDesc = "I have been in a Web Development industry for 4 years and counting and gained a lot of experience through the companies and clients that I have been connected. Please check out my Portfolio below. I'm interested in working with you and discuss how can I help you?";
-		
-		setInterval(
-		function typeWriterDesc() {
-			
-			var p2 = "homeDesc";
-			if (intro2 < txtHomeDesc.length) {
-				document.getElementById(p2).innerHTML += txtHomeDesc.charAt(intro2);
-				intro2++;
-				setTimeout(typeWriterDesc, txtSpeed2);
-			}
-		}, 6500);
 		
 		
 		/* Footer */ 
