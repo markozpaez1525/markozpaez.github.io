@@ -877,6 +877,14 @@ ul.nav.nav-tabs:before {
 		margin-right: 60px !important;
 	}
 	
+	#myServices .table th {
+		padding-left: 0px !important;
+	}
+	
+	#imgMobileResponsive {
+		margin-top: 30px;
+	}
+	
 	.ribbon-card {
 		width: 300px;
 		margin: 15px 10px;
