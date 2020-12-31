@@ -15,6 +15,10 @@ a {
 	color: #fff !important;
 }
 
+.text-black {
+	color: #000
+}
+
 .mt-10 {
 	margin-top: 10px
 }
@@ -357,7 +361,7 @@ a {
 .markoz-blog h2:hover{
 	color:#000 !important;
 	transition:.2s ease color .3s;
-	border-left:10px solid #dcdcdc;
+	border-left:10px solid #11B7B7;
 }
 
 .markoz-portfolio h2:hover::before,
@@ -371,12 +375,21 @@ a {
 	transition:.3s ease margin, .2s ease height .3s;
 }
 
-
-
 .a-link {
     color: #fff;
     background-color: transparent;
 }
+
+.btn-primary {
+	color: #fff;
+	background-color: #11B7B7;
+	border-color: #11B7B7;
+}
+.btn-primary:hover {
+    background-color: #11B7B7;
+    border-color: #11B7B7;
+}
+
 .card {
 	margin: 15px 0;
 	box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
@@ -505,7 +518,7 @@ button:hover, .fa:hover {
 }
 
 .section-bg-5 {
-	background-image: url(../img/wall-bg.jpg);
+	background-image: url(../img/wall-bg.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -539,10 +552,10 @@ button:hover, .fa:hover {
 
 /* IDs */
 #myServices {
-	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/services-bg.jpg) center;
+	background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/services-bg.jpg) center;
 	background-size: auto;
 	background-size: cover;
-	color: #ffffff;
+	color: #000;
 }
 
 #myServices h1, #myServices h3 {
@@ -684,8 +697,8 @@ ul.nav.nav-tabs:before {
 	background-color: #000;
 	border-color: #428bca;
 	border-bottom-color: transparent;
-	border-left: 5px solid #fff;
-	border-right: 5px solid #fff;
+	border-left: 5px solid #11B7B7;
+	border-right: 5px solid #11B7B7;
 	box-shadow: 0px -5px 18px #888888;
 } 
  
@@ -693,37 +706,39 @@ ul.nav.nav-tabs:before {
 /* *********************************************************** */
 
 .ribbon-card {
-  background: #808080;
-  width: 300px;
-  height: 250px;
-  position: relative;
-  margin: 15px 30px;
-  font-size: 0;
-  border-radius: 8px;
-  padding-top: 100px;
-  border: 1px solid #b0aaaa;
-  box-shadow: 0 0 10px 3px rgb(140, 146, 153);
+	background: #000;
+	width: 300px;
+	height: 250px;
+	position: relative;
+	margin: 15px 30px;
+	font-size: 0;
+	border-radius: 8px;
+	padding-top: 100px;
+	border: 1px solid #b0aaaa;
+	box-shadow: 0 0 10px 3px rgb(140, 146, 153);
+	opacity: 0.8;
 }
 
 .ribbon-card .copy {
-  padding: 16px;
-  font-size: 16px;
-  color: #fff;
+	padding: 16px;
+	font-size: 16px;
+	color: #fff;
 }
 
 .ribbon-card .ribbon {
-  position: absolute;
-  left: -20px;
-  top: 30px;
-  width: 340px;
-  height: 48px;
-  background: #000;
-  color: #fff;
-  line-height: 48px;
-  font-family: 'Neuton', serif;
-  font-size: 24px;
-  text-align: center;
-  letter-spacing: 3px;
+	position: absolute;
+	left: -20px;
+	top: 30px;
+	width: 340px;
+	height: 48px;
+	background: #11B7B7;
+	color: #000;
+	line-height: 48px;
+	font-family: 'Neuton', serif;
+	font-size: 24px;
+	text-align: center;
+	letter-spacing: 3px;
+	opacity: 1.0;
 }
 
 .ribbon-card .ribbon:before,
