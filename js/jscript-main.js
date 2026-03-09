@@ -80,9 +80,9 @@
 			$('li a[href="#tab1primary"], li a[href="#tab2primary"]').parent().removeClass('active');
 			$('li a[href="#tab3primary"]').parent().addClass('active');
 		});
-		
+		 
 		/* Hide Markoz Job Experiences*/
-		$('#authorExperience, #authorEducation, #readMoreMinus').hide();
+		 $('#authorExperience, #authorEducation, #readMoreMinus').hide(); 
 		
 		
 		// Click Job Experience

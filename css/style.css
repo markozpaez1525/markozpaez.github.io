@@ -7,12 +7,10 @@ body {
 }
 
 body, a, p, span, li,
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Merriweather', serif;
-}
-
-a {
-	color: #fff !important;
+h1, h2, h3, h4, h5, h6, th, i {
+	/* font-family: 'Merriweather', serif; */
+	font-family: 'Montserrat', sans-serif;
+	color: #063146 !important;
 }
 
 .text-black {
@@ -56,6 +54,10 @@ a {
 }
 
 .mt-100 {
+	margin-top: 100px
+}
+
+.mt-120 {
 	margin-top: 100px
 }
 
@@ -112,14 +114,14 @@ a {
 	margin-right: 100px;
 }
 .nav-link {
-	color: #fff;
+	color: #063146;
 }
 .nav-link:hover {
 	background: none;
 	border: none;
 	border-bottom: 1px solid transparent;
 	border-color: #fff;
-	color: #fff !important;
+	color: #FB9301 !important;
 	border-radius: 0px;
 	cursor: pointer;
 }
@@ -133,13 +135,13 @@ a {
 	overflow: hidden;
 }
 .bg-navbar {
-	background-color: #000;
+	background-color: #F8F9F0;
 	transition: top 0s !important;
 	opacity: 0.9 !important;
-	padding: 15px 0px;
+	padding: 0px 0px;
 }
 .sticky-top {
-	background-color: #000;
+	background-color: #F8F9F0;
 	opacity: 0.9 !important;
 }
 
@@ -242,6 +244,25 @@ a {
 	}
 }
 
+.img-bdr {
+	border: 2px solid #FB9301;
+}
+
+.img-reduce-20 {
+	width: 20%;
+}
+
+.font-dark-azure {
+	color: #063146 !important;
+}
+
+.font-orange {
+	color: #FB9301 !important;
+}
+
+.font-yellow {
+	color: #F8F9F0 !important;
+}
 
 /* Markoz Mega Menu */
 .markoz-portfolio, 
@@ -256,7 +277,7 @@ a {
 	width: 100%;
 	text-align: center;
 	padding: 25%;
-	filter: grayscale(100%);
+	/* filter: grayscale(100%); */
 	z-index: 2;
 }
 
@@ -267,7 +288,8 @@ a {
 .markoz-blog:hover,
 .markoz-blog:hover,
 .markoz-social-media:hover {
-	filter: opacity(.9);
+	/* filter: opacity(.5); */
+
 }
 
 .markoz-portfolio, 
@@ -281,25 +303,25 @@ a {
 }
 
 .markoz-portfolio {
-	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(../img/markoz-portfolio.png) center;
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/markoz-portfolio.webp) center;
 }
 .markoz-services {
-	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(../img/markoz-services.png) center;
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/markoz-services.webp) center;
 }
 .markoz-contact {
-	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(../img/markoz-contact.png);
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/markoz-contact.webp);
 }
 .markoz-social-media {
-	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(../img/markoz-social-media.png) center;
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/markoz-social-media.webp) center;
 	padding: 45% 0 !important;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .markoz-about {
-	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(../img/markoz-about.png) center;
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/markoz-about.webp) center;
 }
 .markoz-blog {
-	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(../img/markoz-blog.png) center;
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/markoz-blog.webp) center;
 }
 
 /* Button Menu Effect */
@@ -310,33 +332,31 @@ a {
 .markoz-blog h2 {
 	position:relative;
 	display:block;
-	z-index:-10;
+	z-index:1;
 	margin:0 auto;
 	padding:0;
-	width:100%;
-	color:#fff;
-	background: transparent;
+	width:50%;
+	color:#FB9301;
+	/* background: transparent; */
+	background: #F8F9F0;
+	opacity: 1;
 	overflow:hidden;
 	border-left:none;
 	border-right:none;
 	border-top:none;
+	border-bottom: 2px solid #FB9301;
 	cursor: pointer;
-}
-
-.markoz-portfolio h2,
-.markoz-services h2,
-.markoz-contact h2,
-.markoz-about h2,
-.markoz-blog h2 {
-	z-index:2;
-	color:#fff;
-	font-size:26px;
-	line-height:100px;
-	padding:0 !important;
-	margin:0 !important;
+	
+	/* z-index:-1; */
+	/* color:#fff; */
+	font-size:18px;
+	line-height:50px;
+	/* padding:0 !important; */
+	/* margin:0 !important; */
 	transition:.3s ease color;
 }
 
+/* .markoz-portfolio::before, */
 .markoz-portfolio h2::before,
 .markoz-services h2::before,
 .markoz-contact h2::before,
@@ -350,20 +370,23 @@ a {
 	padding:0;
 	width:150px;
 	margin-left:-150px;
-	background: #023047;
-	transition:.3s ease margin .3s,.3s ease height;
+	background: #063146;
+	/* transition:.3s ease margin .3s,.3s ease height; */
 }
 
+/* .markoz-portfolio:hover, */
 .markoz-portfolio h2:hover,
 .markoz-services h2:hover,
 .markoz-contact h2:hover,
 .markoz-about h2:hover,
 .markoz-blog h2:hover{
-	color:#fff !important;
-	transition:.2s ease color .3s;
-	border-left:10px solid #ed751c;
+	color:#F8F9F0 !important;
+	/* transition:.2s ease color .3s; */
+	border-left:10px solid #FB9301;
+	z-index:1 !important;
 }
 
+/* .markoz-portfolio:hover::before, */
 .markoz-portfolio h2:hover::before,
 .markoz-services h2:hover::before,
 .markoz-contact h2:hover::before,
@@ -374,6 +397,18 @@ a {
 	margin-left:0px;
 	transition:.3s ease margin, .2s ease height .3s;
 }
+
+/* .menu-btn { */
+	/* z-index:2 !important; */
+/* } */
+
+.flipster__nav__item--current{
+	background-color: #FB9301;
+}
+.flipster__nav__link::after {
+	background: #FB9301 !important;
+}
+
 
 .a-link {
     color: #fff;
@@ -396,16 +431,33 @@ a {
 	margin: 15px 0;
 	box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
 	color: #fff;
-	background-color: #000000b0;
+	background-color: #fff;
 }
 .card-img-top {
 	height: 15rem;
 }
-.card-body {
-	border-top: 1px solid #dee2e6 !important;
+
+/* Curriculum Vitae Section */
+:root {
+	/* For Tabs */
+  --bs-body-bg: #063146; 
+  --bs-emphasis-color: #F8F9F0;
+  --bs-border-color: #F8F9F0;
 }
+
+.card-header {
+  background-color: #FB9301;   
+}
+/* End of Curriculum Vitae Section */
+
+.card-body {
+	border-top: 1px solid #063146 !important;
+	background-color: #F8F9F0;
+}
+
 .border-general {
-	border: 1px solid #dee2e6 !important;
+	/* border: 1px solid #dee2e6 !important; */
+	border: 1px solid #FB9301 !important;
 }
 .border-general-info {
 	border: 2px solid #fff !important;
@@ -446,7 +498,7 @@ button:hover, .fa:hover {
 }
 
 .fieldset-quote{
-    border: 1px groove #808080 !important;
+    border: 1px groove #FB9301 !important;
     padding: 0 1.4em 1.4em 1.4em !important;
     margin: 0 0 1.5em 0 !important;
     -webkit-box-shadow:  0px 0px 0px 0px #000;
@@ -459,10 +511,11 @@ button:hover, .fa:hover {
 	font-weight: bold !important;
 	text-align: left !important;
 	width:auto;
-	padding:0 15px;
-	color: #fff;
-	border: 1px solid #ed751c;
-	background-color: #023047;
+	padding:3px 15px;
+	color: #063146;
+	border: 2px solid #063146;
+	background-color: #FB9301;
+	margin-top: -18px;
 }
 
 .social-media {
@@ -492,6 +545,20 @@ button:hover, .fa:hover {
 
 .section-gap {
 	padding: 60px 20px
+}
+
+.section-bg-yellow {
+	background-color: #F8F9F0;
+	transition: top 0s !important;
+	opacity: 0.9 !important;
+	position: relative;
+}
+
+.section-bg-dark-azure {
+	background-color: #063146;
+	transition: top 0s !important;
+	opacity: 0.9 !important;
+	position: relative;
 }
 
 .section-bg-black {
@@ -526,7 +593,9 @@ button:hover, .fa:hover {
 }
 
 .section-title {
-	font-family: Papyrus, fantasy;
+	/* font-family: 'Raleway', cursive; */
+	/* font-family: "Papyrus", fantasy; */
+	color: #063146;
 }
 
 .zoom {
@@ -551,13 +620,24 @@ button:hover, .fa:hover {
 	margin: 15px 0;
 }
 
+/* Contact Us Modal Form */
+.form-control {
+	background-color: #F8F9F0 !important;
+	border: 1px solid #FB9301 !important;
+}
+
+.btn-close {
+	color: #FB9301 !important;
+	width: 1.5rem;   /* increase width */
+	height: 1.5rem;  /* increase height */
+}
 
 /* IDs */
 #myServices {
-	background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/services-bg.jpg) center;
+	/* background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/services-bg.jpg) center; */
 	background-size: auto;
 	background-size: cover;
-	color: #000;
+	color: #F8F9F0;
 }
 
 #myServices h1, #myServices h3 {
@@ -612,98 +692,11 @@ div #img-bird{
 }
 
 #contactOption {
-	background-color: #80797982;
+	background-color: #063146;
 	border-top: 1px solid #000;
 	float: left !important;
 	padding: 30px 15px;
 }
-
-/* PANEL */
-.panel, .with-nav-tabs, .panel-heading{
-    padding: 5px 5px 0 5px;
-}
-.panel, .with-nav-tabs, .nav-tabs{
-	/* border-bottom: none; */
-}
-
-.panel, .with-nav-tabs, .nav-justified{
-	margin-bottom: -1px;
-}
-.panel-primary .panel-heading {
-    color: #000;
-
-}
-.panel-heading {
-    padding: 0px 15px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-	background-image: linear-gradient(to bottom right, #fff, #000);
-}
-.panel.with-nav-tabs .nav-tabs {
-    border-bottom: none;
-}
-.nav {
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-}
-ul, ol {
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-
-/*** PANEL PRIMARY ***/
-#panelBody {
-	border: 1px solid transparent;
-	border-color: #dcdcdc;
-}
-
-.tab-content {
-	padding: 30px 30px;
-}
-
-.nav li a {
-    position: relative;
-    display: block;
-    /* padding: 10px 15px; */
-}
-.nav-tabs li a {
-    margin-right: 2px;
-    line-height: 1.42857143;
-	padding: 20px 15px;
-}
-ul.nav.nav-tabs:before {
-	display: table;
-    content: " ";
-}
-
-.with-nav-tabs.panel-primary .nav-tabs > li > a,
-.with-nav-tabs.panel-primary .nav-tabs > li > a:hover,
-.with-nav-tabs.panel-primary .nav-tabs > li > a:focus {
-    color: #000;
-}
-.with-nav-tabs.panel-primary .nav-tabs > .open > a,
-.with-nav-tabs.panel-primary .nav-tabs > .open > a:hover,
-.with-nav-tabs.panel-primary .nav-tabs > .open > a:focus,
-.with-nav-tabs.panel-primary .nav-tabs > li > a:hover,
-.with-nav-tabs.panel-primary .nav-tabs > li > a:focus {
-	color: #fff;
-	background-color: #000;
-	border-color: transparent;
-}
-.with-nav-tabs.panel-primary .nav-tabs > li.active > a,
-.with-nav-tabs.panel-primary .nav-tabs > li.active > a:hover,
-.with-nav-tabs.panel-primary .nav-tabs > li.active > a:focus {
-	color: #fff;
-	background-color: #023047;
-	border-color: #428bca;
-	border-bottom-color: transparent;
-	border-left: 5px solid #ed751c;
-	border-right: 5px solid #ed751c;
-	box-shadow: 0px -5px 18px #888888;
-} 
- 
  
 /* *********************************************************** */
 
@@ -749,7 +742,7 @@ ul.nav.nav-tabs:before {
   position: absolute;
   width: 20px;
   height: 20px;
-  border: 10px solid #fff;
+  border: 10px solid #A8A8A8;
 }
 
 .ribbon-card .ribbon:before {
