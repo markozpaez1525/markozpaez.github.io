@@ -302,6 +302,7 @@ h1, h2, h3, h4, h5, h6, th, i {
 	margin-left: -30px;
 }
 
+/* Header Photos */
 .markoz-portfolio {
 	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/markoz-portfolio.webp) center;
 }
@@ -323,6 +324,7 @@ h1, h2, h3, h4, h5, h6, th, i {
 .markoz-blog {
 	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/markoz-blog.webp) center;
 }
+/* Header Photos */
 
 /* Button Menu Effect */
 .markoz-portfolio h2,
@@ -346,13 +348,8 @@ h1, h2, h3, h4, h5, h6, th, i {
 	border-top:none;
 	border-bottom: 2px solid #FB9301;
 	cursor: pointer;
-	
-	/* z-index:-1; */
-	/* color:#fff; */
 	font-size:18px;
 	line-height:50px;
-	/* padding:0 !important; */
-	/* margin:0 !important; */
 	transition:.3s ease color;
 }
 
@@ -374,7 +371,6 @@ h1, h2, h3, h4, h5, h6, th, i {
 	/* transition:.3s ease margin .3s,.3s ease height; */
 }
 
-/* .markoz-portfolio:hover, */
 .markoz-portfolio h2:hover,
 .markoz-services h2:hover,
 .markoz-contact h2:hover,
@@ -386,7 +382,6 @@ h1, h2, h3, h4, h5, h6, th, i {
 	z-index:1 !important;
 }
 
-/* .markoz-portfolio:hover::before, */
 .markoz-portfolio h2:hover::before,
 .markoz-services h2:hover::before,
 .markoz-contact h2:hover::before,
@@ -398,9 +393,10 @@ h1, h2, h3, h4, h5, h6, th, i {
 	transition:.3s ease margin, .2s ease height .3s;
 }
 
-/* .menu-btn { */
-	/* z-index:2 !important; */
-/* } */
+.tri-up-down {
+	width: 100px;
+	height: auto;     /* maintain aspect ratio */
+}
 
 .flipster__nav__item--current{
 	background-color: #FB9301;
@@ -408,7 +404,6 @@ h1, h2, h3, h4, h5, h6, th, i {
 .flipster__nav__link::after {
 	background: #FB9301 !important;
 }
-
 
 .a-link {
     color: #fff;
@@ -423,8 +418,14 @@ h1, h2, h3, h4, h5, h6, th, i {
 .btn-primary:hover {
 	background-color: #023047;
     border-color: #023047;
-    /* background-color: #11B7B7; */
-    /* border-color: #11B7B7; */
+}
+
+/* Curriculum Vitae Section */
+:root {
+	/* For Tabs */
+  --bs-body-bg: #063146; 
+  --bs-emphasis-color: #F8F9F0;
+  --bs-border-color: #F8F9F0;
 }
 
 .card {
@@ -437,26 +438,17 @@ h1, h2, h3, h4, h5, h6, th, i {
 	height: 15rem;
 }
 
-/* Curriculum Vitae Section */
-:root {
-	/* For Tabs */
-  --bs-body-bg: #063146; 
-  --bs-emphasis-color: #F8F9F0;
-  --bs-border-color: #F8F9F0;
-}
-
 .card-header {
   background-color: #FB9301;   
 }
-/* End of Curriculum Vitae Section */
 
 .card-body {
 	border-top: 1px solid #063146 !important;
 	background-color: #F8F9F0;
 }
+/* End of Curriculum Vitae Section */
 
 .border-general {
-	/* border: 1px solid #dee2e6 !important; */
 	border: 1px solid #FB9301 !important;
 }
 .border-general-info {
@@ -593,9 +585,8 @@ button:hover, .fa:hover {
 }
 
 .section-title {
-	/* font-family: 'Raleway', cursive; */
-	/* font-family: "Papyrus", fantasy; */
 	color: #063146;
+	margin-bottom: 0 !important;
 }
 
 .zoom {
@@ -696,6 +687,10 @@ div #img-bird{
 	border-top: 1px solid #000;
 	float: left !important;
 	padding: 30px 15px;
+}
+
+#ToolsLogoBG {
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/tools-logo-bg.webp) center;
 }
  
 /* *********************************************************** */
