@@ -5,7 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
-	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet"> -->
+	
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+
 
     <!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -45,7 +49,7 @@
 	
 	<div class="container-fluid"> 
 		<!-- Landing Page -->
-		<section class="section-bg-black">
+		<section class="section-bg-yellow">
 		
 			<!-- 3D Slideshow Section --> 
 			<div id="slideshow-1">
@@ -53,30 +57,31 @@
 					<div class="content-carrousel text-center">
 						<figure class="shadow homeModal-1">
 							<h5>Portfolio</h5>
-							<img class="mx-auto" src="img/markoz-portfolio.png" alt="">
+							<img class="mx-auto" src="img/markoz-portfolio.webp" alt="">
 						</figure>
 						<figure class="shadow homeModal-2">
 							<h5>Services</h5>
-							<img class="mx-auto" src="img/markoz-services.png" alt="">
+							<img class="mx-auto" src="img/markoz-services.webp" alt="">
 						</figure>
 						<figure class="shadow homeModal-3">
 							<h5>About</h5>
-							<img class="mx-auto" src="img/markoz-about.png" alt="">
+							<img class="mx-auto" src="img/markoz-about.webp" alt="">
 						</figure>
 						<figure class="shadow homeModal-4">
-							<h5>Blog</h5>
-							<img class="mx-auto" src="img/markoz-blog.png" alt="">
+							<h5>Articles</h5>
+							<img class="mx-auto" src="img/markoz-blog.webp" alt="">
 						</figure>
 					</div>
 				</div>
 			</div>
-			<!-- 3D Slideshow Section --> 
+			<!-- End of 3D Slideshow Section --> 
 			
+			<!-- After Hovering 3D Slideshow -->
 			<div id="slideshow-2" class="markoz-landing-page">
 				<div class="row">
 					<div class="col-lg-4">
 						<div class="markoz-portfolio">
-							<h2 id="navPortfolio">Portfolio</h2>
+							<h2 id="navPortfolio" class="menu-btn" >Portfolio</h2>
 							<div class="line"></div>
 						</div>
 						<div class="markoz-services">
@@ -85,7 +90,7 @@
 					</div>
 					<div class="col-lg-4">
 						<div class="markoz-contact">
-							<h2 id="navContact" class="nav-item" data-toggle="modal" data-target="#EmailCaptureModal">Contact</h2>
+							<h2 id="navContact" class="nav-item" data-bs-toggle="modal" data-bs-target="#EmailCaptureModal">Contact</h2>
 						</div>
 						<div class="markoz-social-media">
 							<div class="text-center"> 
@@ -100,23 +105,25 @@
 							<h2 id="navAbout">About</h2>
 						</div>
 						<div class="markoz-blog">
-							<h2 id="navBlogs">Blog</h2>
+							<h2 id="navBlogs">Articles</h2>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- Landing Page -->
+		<!-- End of Landing Page -->
+		<!-- Flying Bird -->
 		<section class="section-bg-black">
 			<div id="div-bird">
 				<img id="img-bird" src="img/bird.gif" alt="Bird"> 
 			</div>
 		</section>
-		<!-- Start Portfolio -->
-		<section class="section-gap section-bg-black">
+		<!-- End of Flying Bird -->
+		<!-- Start of Portfolio -->
+		<section class="section-gap section-bg-yellow">
 			<div id="myPortfolio"> 
 			<div class="text-center mb-80"> 
-				<h1 class="section-title">----------PORTFOLIO---------</h1>
+				<h1 class="section-title">PORTFOLIO</h1>
 			</div>
 			<article class="mt-20">
 
@@ -131,7 +138,7 @@
 							<!-- </div> -->
 						 <!-- </li > -->
 						<li data-flip-title="Corporate" class="text-center">
-							<img id="" src="img/img-text-1.jpg" class="img-fluid"  alt="Portfolio">
+							<img id="" src="img/img-text-1.webp" class="img-fluid img-bdr"  alt="Portfolio">
 							<div>
 								<a href="https://remotech.netlify.app/" target="_blank">
 									<button type="button" class="btn btn-primary portfolio-btn mt-10" >Visit Site</button>	
@@ -139,7 +146,7 @@
 							</div>
 						 </li>
 						 <li data-flip-title="Travel" class="text-center">
-							<img id="" src="img/img-text-2.jpg"  class="img-fluid" alt="Portfolio">
+							<img id="" src="img/img-text-2.webp"  class="img-fluid img-bdr" alt="Portfolio">
 							<div>
 								<a href="https://bit.ly/markoztravel" target="_blank">
 									<button type="button" class="btn btn-primary portfolio-btn mt-10" >Visit Site</button>	
@@ -147,33 +154,35 @@
 							</div>
 						 </li >
 						 <li data-flip-title="Real Estate" class="text-center">
-							<img id="" src="img/img-text-3.jpg"  class="img-fluid" alt="Portfolio">
+							<img id="" src="img/img-text-3.webp"  class="img-fluid img-bdr" alt="Portfolio">
 							<div>
 								<a href="https://bit.ly/markrealestate" target="_blank">
 									<button type="button" class="btn btn-primary portfolio-btn mt-10" >Visit Site</button>	
 								</a>
 							</div>
 						 </li>
-						 <li data-flip-title="Food" class="text-center">
-							<img id="" src="img/img-text-4.jpg"  class="img-fluid" alt="Portfolio"><br>
-							<div>
-								<a href="https://bit.ly/markrestaurant" target="_blank">
-									<button type="button" class="btn btn-primary portfolio-btn mt-10" >Visit Site</button>	
-								</a>
-							</div>
-						 </li>
 						 <li data-flip-title="Pets" class="text-center">
-							<img id="" src="img/img-text-5.png"  class="img-fluid" alt="Portfolio"><br>
+							<img id="" src="img/img-text-4.webp"  class="img-fluid img-bdr" alt="Portfolio"><br>
 							<div>
 								<a href="https://bit.ly/markozpets" target="_blank">
 									<button type="button" class="btn btn-primary portfolio-btn mt-10" >Visit Site</button>	
 								</a>
 							</div>
 						 </li>
+						 <li data-flip-title="Food" class="text-center">
+							<img id="" src="img/img-text-5.webp"  class="img-fluid img-bdr" alt="Portfolio"><br>
+							<div>
+								<a href="https://bit.ly/markrestaurant" target="_blank">
+									<button type="button" class="btn btn-primary portfolio-btn mt-10" >Visit Site</button>	
+								</a>
+								
+							</div>
+						 </li>
 						
 					</ul>
 				</div>
-
+				
+				<!-- JScript for Carousel Effect -->
 				<script>
 					var carousel = $("#carousel").flipster({
 						style: 'carousel',
@@ -182,91 +191,102 @@
 						buttons:   true,
 					});
 				</script>
-
+				<!-- End of JScript for Carousel Effect -->
+				
 			</article>
 			
 			</div>
 		</section>
-		<!-- End Portfolio -->
-		<!-- Start Services -->
-		<section id="myServices" class="section-gap">
+		<!-- End of Portfolio -->
+		
+		<!-- Start of Services -->
+		<section id="myServices" class="section-gap section-bg-yellow">
 			<div class="text-center mb-80"> 
-				<h1 class="section-title">----------SERVICES---------</h1>
+				<h1 class="section-title">SERVICES</h1>
 			</div>
 			<div class="row"> 
-				<div class="col-12 col-sm-12 col-md-12 col-lg-5 text-center animated slideInDown delay-5s"> 
-					<h2 class=""><p>Looking for Web Developer?</p><h2>
-					<h5><p>This is the Right Place</p><h5>
-					<p>I am creating:</p>
+				<div class="col-6 col-sm-12 col-md-12 col-lg-6 text-center animated slideInDown delay-5s"> 
+					<h2 class=""><p>Looking for a Web Developer?</p><h2>
+					<h5><p>You are in the right place</p></h5>
+					<h5><p>I will help you create:</p></h5>
 					<table class="table">
 						<tbody>
 							<tr>
-							<th scope="row"><i class="fas fa-check"></i> Landing Pages</th>
+							<th scope="row" class="font-yellow"><i class="font-yellow fas fa-check"></i> Landing Pages</th>
 							</tr>
 							<tr>
-							<th scope="row"><i class="fas fa-check"></i> Static Mobile Responsive Website</th>
+							<th scope="row" class="font-yellow"><i class="font-yellow fas fa-check"></i> Static Mobile Responsive Website</th>
 							</tr>
 							<tr>
-							<th scope="row"><i class="fas fa-check"></i> Wordpress Website with Elementor</th>
+							<th scope="row" class="font-yellow"><i class="font-yellow fas fa-check"></i> Wordpress Website with Elementor</th>
 							</tr>
 							<tr>
 						</tbody>
 					</table>
 				</div>
-				<div class="col-12 col-sm-12 col-md-12 col-lg-2 text-center  animated slideInUp delay-5s"> 
-					<div class="gradient-buttons">
-						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#EmailCaptureModal">HIRE ME</button>
-					</div>
-					</br>
-					<a href="https://www.upwork.com/o/profiles/users/~010695747bad43fd9e/" target="_blank">
-						<img id="" src="img/upwork-logo.png" class="img-fluid"  alt="mobile-reponsive">
-					</a>
-					<div class="mt-20">
-						<h5><p>I used:</p><h5>
-					</div>
-					<div class="mt-20">
-						<img id="" src="img/html-css-js.png" class="img-fluid"  alt="mobile-reponsive">
-					</div>
-					<div class="row mt-20">
-						<div class="col-lg-6 col-md-6 col-6">
-							<img id="" src="img/bootstrap-logo.png" class="img-fluid"  alt="mobile-reponsive">
-							
-						</div>
-						<div class="col-lg-6 col-md-6 col-6">
-							<img id="" src="img/elementor-logo.png" class="img-fluid"  alt="mobile-reponsive">
-						</div>
-					</div>
-					<div class="row mt-20">
-						<div class="col-lg-6 col-md-6 col-6">
-							<img id="" src="img/jquery-logo.png" class="img-fluid"  alt="mobile-reponsive">
-							
-						</div>
-						<div class="col-lg-6 col-md-6 col-6">
-							<img id="" src="img/wordpress-logo.png" class="img-fluid"  alt="mobile-reponsive">
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-sm-12 col-md-12 col-lg-5 text-center animated slideInUp delay-5s"> 
-					<img id="imgMobileResponsive" src="img/mobile-reponsive.png" class="img-fluid"  alt="mobile-reponsive">
+				<div class="col-6 col-sm-12 col-md-12 col-lg-6 text-center animated slideInUp delay-5s"> 
+					<h5><p>Mobile Responsive</p><h5>
+					<img id="imgMobileResponsive" src="img/mobile-reponsive.webp" class="img-fluid img-bdr"  alt="mobile-reponsive">
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center animated slideInUp delay-5s"> 		
+					<div class="gradient-buttons mt-40">
+						<button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#EmailCaptureModal">HIRE ME</button>
+					</div>
+					</br>
+					<div>
+						<a href="https://www.upwork.com/o/profiles/users/~010695747bad43fd9e/" target="_blank">
+							<img id="" src="img/upwork-logo.webp" class="img-fluid img-reduce-20"  alt="mobile-reponsive">
+						</a>
+					</div>
+				</div>			
+			</div>
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center mt-80"> 
+				<h1 class="section-title">MY TOOLS</h1>
+			</div>
+			<div class="row">
+				<!-- <div class="text-center animated slideInUp delay-5s"> 		 -->
+					<div class="col-4 col-sm-12 col-md-12 col-lg-4 text-center mt-20">
+						<div class="col-lg-12 col-md-6 col-12">
+							<img id="" src="img/html-css-js.webp" class="img-fluid"  alt="mobile-reponsive">
+						</div>
+						<div class="col-lg-12 col-md-6 col-12">
+							<img id="" src="img/elementor-logo.webp" class="img-fluid"  alt="mobile-reponsive">
+						</div>
+					</div>
+					<div class="col-4 col-sm-12 col-md-12 col-lg-4 text-center mt-120">
+						<div class="col-lg-12 col-md-6 col-12">
+							<img id="" src="img/bootstrap-logo.webp" class="img-fluid"  alt="mobile-reponsive">
+						</div>
+					</div>
+					<div class="col-4 col-sm-12 col-md-12 col-lg-4 text-center mt-20">
+						<div class="col-lg-12 col-md-6 col-12">
+							<img id="" src="img/jquery-logo.webp" class="img-fluid"  alt="mobile-reponsive">
+						</div>
+						<div class="col-lg-12 col-md-6 col-12">
+							<img id="" src="img/wordpress-logo.webp" class="img-fluid"  alt="mobile-reponsive">
+						</div>
+					</div>
+				<!-- </div>			 -->
+			</div>
 		</section>
-		<!-- End Services -->
+		<!-- End of Services -->
 		
 		<!-- Start Blogs -->
-		<section class="section-gap section-bg-2">
+		<section class="section-gap section-bg-yellow">
 			<div id="myBlogs"> 
 				<div class="container">
 					<div class="text-center mb-60"> 
-						<h1 class="section-title">----------BLOGS---------</h1>
-						<p class="mt-40">This section is my venue to express my thoughts and opinions about the things that I had experienced, observed, learned and sometimes imagination ko lang. :)</p>
+						<h1 class="section-title">ARTICLES</h1>
+						<p class="mt-40">This space is my sanctuary—a place where I pour out thoughts and opinions, born from what I have experienced, observed, and learned, and at times, woven purely from imagination.</p>
 					</div>
 					<div class="row text-center mt-20"> 
 						<div class="col-12 col-sm-12 col-md-6 col-lg-3"> 
 							<div class="card border-general text-center">
-							  <img src="img/img-copywriting.png" class="card-img-top" alt="Card Image">
+							  <img src="img/img-copywriting.webp" class="card-img-top" alt="Card Image">
 							  <div class="card-body">
-								<h6 class="card-title">Valuable Tips on How to be a Copywriter</h6>
+								<h6 class="card-title">Valuable Tips on How to be a Copywriter.</h6>
 								<p class="card-text"></p>
 									<div data-toggle="tooltip" data-placement="top" title="Disclaimer: I am not the author of this copy. My intention is to share what I had discovered for those who are interested to be a copywriter. Credit to the owner of this copy. Click and download if you are interested.">
 										<a href="docs/Copywriting.pdf" target="_blank" download><span>Download Copywriting Tips</span></a>
@@ -277,9 +297,9 @@
 						</div>
 						<div class="col-12 col-sm-12 col-md-6 col-lg-3"> 
 							<div class="card border-general">
-							  <img src="img/img-heart.png" class="card-img-top" alt="Card Image">
+							  <img src="img/img-heart.webp" class="card-img-top" alt="Card Image">
 							  <div class="card-body">
-								<h6 class="card-title">Why do we need to Fall for the Wrong Person atleast once?</h6>
+								<h6 class="card-title">Why must we fall for the wrong person at least once?</h6>
 								<p class="card-text"></p>
 								<div data-toggle="tooltip" data-placement="top" title="Oops! May HUGOT ka? May 'LOVE LIFE' KA? Ha? Ha? Ha? Click na!">
 								<a href="#" target="_blank" >Hugot pa more...</a>
@@ -289,7 +309,7 @@
 						</div>
 						<div class="col-12 col-sm-12 col-md-6 col-lg-3"> 
 							<div class="card border-general">
-							  <img src="img/img-people.png" class="card-img-top" alt="Card Image">
+							  <img src="img/img-people.webp" class="card-img-top" alt="Card Image">
 							  <div class="card-body">
 								<h6 class="card-title">What are the Habits of Successful People?</h6>
 								<p class="card-text"></p>
@@ -301,9 +321,9 @@
 						</div>
 						<div class="col-12 col-sm-12 col-md-6 col-lg-3"> 
 							<div class="card border-general">
-							  <img src="img/img-travel.png" class="card-img-top" alt="Card Image">
+							  <img src="img/img-travel.webp" class="card-img-top" alt="Card Image">
 							  <div class="card-body">
-								<h6 class="card-title">How to travel in Iloilo City and live like local?</h6>
+								<h6 class="card-title">Experience vibrant Iloilo like a local.</h6>
 								<p class="card-text"></p>
 								<div data-toggle="tooltip" data-placement="top" title="Information about Iloilo City! Malagaw ka sa Iloilo? This is your guide.">
 								<a href="https://iloilowander.tk/" target="_blank" >Let's go...</a>
@@ -320,12 +340,12 @@
 		<!-- End Blogs -->		
 		
 		<!--Start Quotes -->
-		<section class="section-gap section-bg-5">
+		<section class="section-gap section-bg-yellow">
 			<div id="myQuotesToLiveBy">
 				<div class="container">
 					<div class="text-center mb-40"> 
-						<h1 class="section-title text-black">----------QUOTES----------</h1>
-						<p class="mt-20 text-black">These are the quotes that I loved to live by.</p>
+						<h1 class="section-title text-black">QUOTES</h1>
+						<p class="mt-20 text-black">My compass in words: the quotes that move me.</p>
 					</div>
 					<!-- Start Quotes First Batch -->
 					<div class="row mt-20">
@@ -438,7 +458,7 @@
 		<!-- End Quotes -->
 		
 		<!-- Start About Me -->
-		<section class="section-gap section-bg-black">
+		<section class="section-gap section-bg-dark-azure">
 			<div id="myPersonalInfo" class=""> 
 			<div class="container mb-40"> 
 				<div class="row"> 
@@ -446,31 +466,63 @@
 						<img id="img-author" src="img/img-author.jpg" class="rounded border-general border-general-info" alt="Author">
 					</div>
 					<div class="col-12 col-sm-12 col-md-6 col-lg-6 my-auto author-info">
-						<h3 class="mt-10 font-weight-bold">MARKOZ PAEZ</h3>
-						<span class="font-weight-bold">Phone/WhattsApp:</span><a class="a-link" href="tel:+639281274145"><br><span>+639281274145</span></a><br>
-						<span class="font-weight-bold">Email:</span><a class="a-link" href="mailto:markozpaez1525@gmail.com"><br><span>markozpaez1525@gmail.com</span></a><br>
-						<span class="font-weight-bold">Address:</span><br><span>Iloilo City 5000, Philippines</span>
+						<h3 class="mt-10 font-yellow font-weight-bold">MARKOZ PAEZ</h3>
+						<span class="font-yellow font-weight-bold">Phone/WhattsApp:</span><a class="a-link" href="tel:+639281274145"><br><span class="font-orange">+639-281-274-145</span></a><br>
+						<span class="font-yellow font-weight-bold">Email:</span><a class="a-link" href="mailto:markozpaez1525@gmail.com"><br><span class="font-orange">markozpaez1525@gmail.com</span></a><br>
+						<span class="font-yellow font-weight-bold">Address:</span><br><span class="font-orange">Iloilo City 5000, Philippines</span>
 						
 					</div>
 				</div>
 			</div>
-			<div class="panel with-nav-tabs panel-primary">
-				<div class="panel-heading">
-					<ul class="nav nav-tabs">
-						<li><a href="#tab1primary" data-toggle="tab">Curriculum Vitae</a></li>
-						<li><a href="#tab2primary" data-toggle="tab">Photos</a></li>
-						<li><a href="#tab3primary" data-toggle="tab">eBooks</a></li>
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-6 col-lg-12 text-center">
+					<h5 class="font-yellow">ALL ABOUT ME</h5>
+				</div>
+			</div>
+			
+			<!-- Testing -->
+			<div class="card">
+				<div class="card-header">
+			  
+			  <!-- Nav tabs -->
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+					  <li class="nav-item" role="presentation">
+						<button class="nav-link active" id="markozcv-tab" data-bs-toggle="tab" 
+								data-bs-target="#markozcv" type="button" role="tab" 
+								aria-controls="markozcv" aria-selected="true">
+						  Curriculum Vitae
+						</button>
+					  </li>
+					  <li class="nav-item" role="presentation">
+						<button class="nav-link" id="markozphoto-tab" data-bs-toggle="tab" 
+								data-bs-target="#markozphoto" type="button" role="tab" 
+								aria-controls="markozphoto" aria-selected="false">
+						  Photos
+						</button>
+					  </li>
+						<li class="nav-item" role="presentation">
+						<button class="nav-link" id="markozebooks-tab" data-bs-toggle="tab" 
+								data-bs-target="#markozebooks" type="button" role="tab" 
+								aria-controls="markozebooks" aria-selected="false">
+						  eBooks
+						</button>
+					  </li>
 					</ul>
 				</div>
-				<div id="panelBody">
-					<div class="tab-content">
-						<div class="tab-pane fade" id="tab1primary">
-							<div class="row">
-								<div class="col-lg-12 col-12 text-center">
-									<a href="docs/Mark-Paez-Resume.pdf" target="_blank" download><span><i class="fas fa-download"></i> Download Resume</span></a>
+			  
+				<div class="card-body">
+			  
+					<!-- Tab Content -->
+					<div class="tab-content" id="myTabContent">
+						<!-- Markoz CV -->
+						<div class="font-orange tab-pane fade show active" id="markozcv" role="tabpanel" aria-labelledby="markozcv-tab">
+								<div class="row mt-20 mb-30">
+									<div class="col-lg-12 col-12 text-center">
+										<a href="docs/Mark-Paez-Resume.pdf" target="_blank" download><span class="fw-bold"><i class="fas fa-download"></i> Download My Resume</span></a>
+									</div>
 								</div>
-							</div>
-							<div class="row">
+								<!-- Resume -->
+								<div class="row">
 								<div class="col-12 col-sm-12 col-md-12 col-lg-12"> 
 									
 									
@@ -500,25 +552,24 @@
 												•	Customer Service<br>	
 												•	Social Media Manager<br>	
 												•	ConnectWise Email Marketing
-												
 												</p>
 											</fieldset>
 										</div>
 									</div>
 									<div id="readMorePlus">
-										<i class="far fa-plus-square"></i>
-										<span>Job Experience</span>
+										<i class="far fa-plus-square font-orange"></i>
+										<span class="font-dark-azure fw-bold">View Job Experience</span>
 									</div>
 									<div id="readMoreMinus">
 										<i class="far fa-minus-square"></i>
 										<span>Job Experience</span>
 									</div>
-									<div id="authorExperience" class="row mt-20"> 
+									<div id="authorExperience" class="row mt-40"> 
 										<div class="col-12 col-sm-12 col-md-12 col-lg-12"> 
 											<fieldset class="fieldset-quote"> 
 											<legend class="fieldset-legend">PROFESSIONAL EXPERIENCES</legend>
-												<span  class="font-weight-bold"><br>
-													<u>Virtual Assistant/Web developer</u><br>
+												<span  class="fw-bold"><br>
+													<u>Virtual Assistant/Web Developer</u><br>
 													Upwork | Iloilo City, Iloilo 5000<br>
 													July 2015 - Present<br>
 												</span>
@@ -528,7 +579,7 @@
 												•	Developed a sub‑company website for a client<br>
 												•	Developed a company website for my client's MSP customer<br><br>
 												</span>
-												<span  class="font-weight-bold">
+												<span  class="fw-bold">
 													<u>Customer Service Representative</u><br>
 													Transcom Worldwide Philippines | Iloilo City, Iloilo 5000<br>
 													February 2015 – May 2015<br>
@@ -538,7 +589,7 @@
 												•	Selling Cable, Internet and Phone Services<br><br>
 
 												</span>
-												<span  class="font-weight-bold">
+												<span  class="fw-bold">
 													<u>Web Developer</u><br>
 													Sell2Any B.V. | Iloilo City, Iloilo 5000<br>
 													June 2014 – November 2014<br>
@@ -546,7 +597,7 @@
 												<span>
 												•	Convert PSD web design into HTML file using bootstrap<br><br>
 												</span>
-												<span  class="font-weight-bold">
+												<span  class="fw-bold">
 													<u>Web Developer</u><br>
 													HP Outsourcing Philippines, Inc. | Davao City 8000<br>
 													October 2013 – March 2014<br>
@@ -554,7 +605,7 @@
 												<span>
 												•	Helped Team developed Funnel Websites using WordPress<br><br>
 												</span>
-												<span  class="font-weight-bold">
+												<span  class="fw-bold">
 													<u>Software Programmer</u><br>
 													Geodata Solutions Inc. | Koronadal City 9506<br>
 													July 2009 – September 2013<br>
@@ -573,8 +624,8 @@
 										<div class="col-12 col-sm-12 col-md-12 col-lg-12"> 
 											<fieldset class="fieldset-quote"> 
 											<legend class="fieldset-legend">EDUCATION</legend>
-												<span class="font-weight-bold">
-													Bachelor of Science in Computer Engineering<br>
+												<span class="fw-bold">
+													<br>Bachelor of Science in Computer Engineering<br>
 												</span>
 												<span>
 													University of Southern Mindanao<br>Kabacan, Cotabato 9407<br>
@@ -584,14 +635,17 @@
 										</div>
 									</div>
 
-								</div>
+									</div>
 							
 							</div>
-							
-						
+								<!-- Resume -->
 						</div>
-						<div class="active tab-pane fade" id="tab2primary">
-							
+						<!-- End of Markoz CV -->
+					
+					
+					<!-- Markoz Photos -->
+					<div class="font-orange tab-pane fade" id="markozphoto" role="tabpanel" aria-labelledby="markozphoto-tab">
+							<!-- Markoz Photos -->
 							<div class="container">
 								<div class="text-center">
 									<h3 class="section-title mt-10 mb-30">Follow Me on Instagram</h3>
@@ -655,8 +709,13 @@
 									</a>
 								</div>
 							</div>
-						</div>
-						<div class="tab-pane fade" id="tab3primary">
+							<!-- Markoz Photos -->
+					  </div>
+					<!-- End of Markoz Photos -->
+					
+					<!-- Markoz eBooks -->
+					<div class="font-orange tab-pane fade" id="markozebooks" role="tabpanel" aria-labelledby="markozebooks-tab">
+							<!-- eBooks -->
 							<div class="row">
 								<div class="col-12 col-sm-12 col-md-9 col-lg-9"> 
 									<!-- <ul> -->
@@ -667,10 +726,19 @@
 									<h3>eBooks are coming soon...<h3>
 								</div>
 							</div>
-						</div>
+							<!-- eBooks -->
+					  </div>
 					</div>
+			  
 				</div>
+					<!-- End of Markoz eBooks -->
+					</div>
+					<!-- End of Tab Content -->
+				
 			</div>
+			
+			<!-- Testing -->
+			
 			</div>
 		</section>
 		<!-- End About Me -->
@@ -680,13 +748,13 @@
 
 			<!-- Social Media -->
 			<div class="text-center"> 
-				<span class="ml-1">Follow:</span>
+				<span class="ml-1 font-yellow">Follow:</span>
 				<a href="https://www.facebook.com/markozpaez15/" class="fa fa-facebook social-media" target="_blank"></a>
 				<a href="https://www.instagram.com/markozpaez/" class="fa fa-instagram social-media" target="_blank"></a>
 				<a href="https://www.linkedin.com/in/markpaez1525/" class="fa fa-linkedin social-media" target="_blank"></a>
 			</div>
 		  <!-- Copyright -->
-			<div class="footer-copyright text-center py-3">Copyright © <span id="footerYear" class="ml-1"></span> | Markoz Paez | All Rights Reserved.</div>
+			<div class="footer-copyright text-center py-3">Copyright © <span id="footerYear" class="ml-1 font-yellow"></span> | Markoz Paez | All Rights Reserved.</div>
 		  <!-- Copyright -->
         
 		</footer>
@@ -710,14 +778,14 @@
 		<div class="form-elements">
 		
 			<!-- Start Modal -->
-			<div class="modal" id="EmailCaptureModal">
+			<div class="modal fade" id="EmailCaptureModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
 				<div class="modal-dialog">
 					<div class="modal-content">
 
 						<!-- Start Modal Header -->
 						<div class="modal-header">
-							<h4 class="modal-title">Send me a message</h4>
-							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title font-yellow">Send me a message</h4>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">&times;</button>
 						</div>
 						<!-- End Modal Header -->
 
@@ -740,8 +808,8 @@
 								<span class="blank-message badge badge-pill badge-warning" style="display:none">Please enter your message</span>
 							</div>
 							<div class="form-group">
-								<span class="fa fa-lock"></span>
-								<span id="badge-confidential" class="ml-1">Your information will remain<span class="badge badge-danger">CONFIDENTIAL</span></span>				
+								<span class="font-orange fa fa-lock"></span>
+								<span id="badge-confidential" class="ml-1 font-yellow">Your information will remain<span class="font-orange badge badge-danger">CONFIDENTIAL</span></span>				
 							</div>
 						</div>
 						<!-- End Modal body -->
@@ -750,19 +818,19 @@
 						<div class="modal-footer">
 							<!-- <button id="btnSendMessage" class="btn btn-success btn-lg btn-block">Submit Message</button> -->
 							<div class="gradient-buttons">
-								<button id="btnSendMessage" type="button" class="btn btn-primary btn-lg">Submit Message</button>
+								<button id="btnSendMessage" type="button" class="btn btn-primary btn-lg" data-bs-dismiss="modal">Submit Message</button>
 							</div>
 						</div>
 						<div id="contactOption">
-							<span class="font-weight-bold">You may contact me in WhatsApp:
+							<span class="fw-bold font-yellow">You may contact me in WhatsApp:
 								<a class="a-link" href="tel:+639281274145">
-									<span class="badge badge-primary ml-5">+639281274145</span>
+									<span class="badge badge-primary ml-5 font-yellow">+639-281-274-145</span>
 								</a>
 							</span>
-							</br><span class="font-weight-bold">OR</span></br>
-							<span class="font-weight-bold">You may email me at:
+							</br><span class="fw-bold font-yellow">OR</span></br>
+							<span class="fw-bold font-yellow">You may email me at:
 								<a class="a-link" href="mailto:markozpaez1525@gmail.com">
-									<span class="badge badge-primary ml-5">markozpaez1525@gmail.com</span>
+									<span class="badge badge-primary ml-5 font-yellow">markozpaez1525@gmail.com</span>
 								</a>
 							</span>							
 						</div>
