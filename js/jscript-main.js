@@ -3,6 +3,13 @@
 
 	jQuery(document).ready(function(){
 		
+		/* Prevent my photos for right click */ 
+		document.querySelectorAll("img").forEach((img) => {
+		  img.addEventListener("contextmenu", (event) => {
+			event.preventDefault();
+		  });
+		});
+		
 		/* ToolTip */ 
 		$('[data-toggle="tooltip"]').tooltip();
 
