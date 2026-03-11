@@ -13,6 +13,7 @@ h1, h2, h3, h4, h5, h6, th, i {
 	color: #063146 !important;
 }
 
+
 .text-black {
 	color: #000
 }
@@ -391,6 +392,74 @@ h1, h2, h3, h4, h5, h6, th, i {
 	width:100%;
 	margin-left:0px;
 	transition:.3s ease margin, .2s ease height .3s;
+}
+
+/* For all Photos in the entire website */
+.photo-box {
+	width: 100%;              /* responsive width */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/* Photos in Header 3D Section */
+.header-photo {
+	max-width: 640px;         /* original width */
+	aspect-ratio: 640 / 426;  /* keeps proportions */
+	height:100%; 
+}
+
+#headerPortfolio {
+	background-image: url(../img/markoz-portfolio.webp);	
+}
+
+#headerServices {
+	background-image: url(../img/markoz-services.webp);	
+}
+
+#headerAbout {
+	background-image: url(../img/markoz-about.webp);	
+}
+
+#headerArticles {
+	background-image: url(../img/markoz-blog.webp);	
+}
+
+/* Photos in Portfolio Section */
+.portfolio-photo {
+	max-width: 600px;         /* base width */
+	aspect-ratio: 2 / 1;      /* keeps 600x300 proportion */
+	height: 300px; 
+}
+
+#CorporatePortfolio {
+	background-image: url(../img/img-text-1.webp);	
+}
+
+#TravelPortfolio {
+	background-image: url(../img/img-text-2.webp);	
+}
+
+#RealEstatePortfolio {
+	background-image: url(../img/img-text-3.webp);	
+}
+
+#PetsPortfolio {
+	background-image: url(../img/img-text-4.webp);	
+}
+
+#FoodPortfolio {
+	background-image: url(../img/img-text-5.webp);	
+}
+
+.author-photo {
+	max-width: 600px;         /* original width */
+	aspect-ratio: 1 / 1;  /* keeps proportions */
+	height:100%; 
+}
+
+#img-author {
+	background-image: url(../img/img-author.jpg);	
 }
 
 .tri-up-down {

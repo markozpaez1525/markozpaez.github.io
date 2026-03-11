@@ -7,27 +7,28 @@
 	
 	<!-- <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet"> -->
 	
+	<!-- Font Style for entire website -->
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
-
-
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap and CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-	
 	<!-- Flipster Carousel-->
     <link rel="stylesheet" href="css/jquery.flipster.min.css">
 	<script src="js/jquery.min.js"></script>
     <script src="js/jquery.flipster.min.js"></script>
 	
-
 	<!-- Website Title -->
 	<link rel="icon" href="img/img-title-icon.png"/>
     <title>Markoz Paez</title>
 	
+  </head>
+  
+  <body>
+  
 	<div class="bg-navbar sticky-top fixed-top text-center">
 		<a id="navHome" href="index.html">
 			<img id="" src="img/img-banner-logo.png" class="img-fluid" alt="Logo">
@@ -41,11 +42,7 @@
 		<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> -->
 			<!-- <span class="navbar-toggler-icon"></span> -->
 		<!-- </button> -->
-	</nav>
-	
-  </head>
-  
-  <body>
+	</nav>  
 	
 	<div class="container-fluid"> 
 		<!-- Landing Page -->
@@ -57,19 +54,19 @@
 					<div class="content-carrousel text-center">
 						<figure class="shadow homeModal-1">
 							<h5 class="font-yellow">Portfolio</h5>
-							<img class="mx-auto" src="img/markoz-portfolio.webp" alt="">
+							<div id="headerPortfolio" class="photo-box header-photo"></div>
 						</figure>
 						<figure class="shadow homeModal-2">
 							<h5 class="font-yellow">Services</h5>
-							<img class="mx-auto" src="img/markoz-services.webp" alt="">
+							<div id="headerServices" class="photo-box header-photo"></div>
 						</figure>
 						<figure class="shadow homeModal-3">
 							<h5 class="font-yellow">About</h5>
-							<img class="mx-auto" src="img/markoz-about.webp" alt="">
+							<div id="headerAbout" class="photo-box header-photo"></div>
 						</figure>
 						<figure class="shadow homeModal-4">
 							<h5 class="font-yellow">Articles</h5>
-							<img class="mx-auto" src="img/markoz-blog.webp" alt="">
+							<div id="headerArticles" class="photo-box header-photo"></div>
 						</figure>
 					</div>
 				</div>
@@ -110,6 +107,8 @@
 					</div>
 				</div>
 			</div>
+			<!-- End of Hovering 3D Slideshow -->
+			
 		</section>
 		<!-- End of Landing Page -->
 		<!-- Flying Bird -->
@@ -126,9 +125,9 @@
 				
 			<!-- </div> -->
 			<div class="text-center mb-80"> 
-				<img id="" src="img/tri-up.webp" class="tri-up-down img-fluid"  alt="mobile-reponsive">
+				<img id="" src="img/tri-up.webp" class="tri-up-down img-fluid photo-box"  alt="mobile-reponsive">
 				<h1 class="section-title">PORTFOLIO</h1>
-				<img id="" src="img/tri-down.webp" class="tri-up-down img-fluid"  alt="mobile-reponsive">
+				<img id="" src="img/tri-down.webp" class="tri-up-down img-fluid photo-box"  alt="mobile-reponsive">
 			</div>
 			<!-- <div class="text-center tri-up-down"> -->
 				
@@ -146,7 +145,7 @@
 							<!-- </div> -->
 						 <!-- </li > -->
 						<li data-flip-title="Corporate" class="text-center">
-							<img id="" src="img/img-text-1.webp" class="img-fluid img-bdr"  alt="Portfolio">
+							<div id="CorporatePortfolio" class="photo-box portfolio-photo"></div>
 							<div>
 								<a href="https://remotech.netlify.app/" target="_blank">
 									<button type="button" class="btn btn-primary portfolio-btn mt-10" >Visit Site</button>	
@@ -154,7 +153,7 @@
 							</div>
 						 </li>
 						 <li data-flip-title="Travel" class="text-center">
-							<img id="" src="img/img-text-2.webp"  class="img-fluid img-bdr" alt="Portfolio">
+							<div id="TravelPortfolio" class="photo-box portfolio-photo"></div>
 							<div>
 								<a href="https://bit.ly/markoztravel" target="_blank">
 									<button type="button" class="btn btn-primary portfolio-btn mt-10" >Visit Site</button>	
@@ -162,7 +161,7 @@
 							</div>
 						 </li >
 						 <li data-flip-title="Real Estate" class="text-center">
-							<img id="" src="img/img-text-3.webp"  class="img-fluid img-bdr" alt="Portfolio">
+							<div id="RealEstatePortfolio" class="photo-box portfolio-photo"></div>
 							<div>
 								<a href="https://bit.ly/markrealestate" target="_blank">
 									<button type="button" class="btn btn-primary portfolio-btn mt-10" >Visit Site</button>	
@@ -170,7 +169,7 @@
 							</div>
 						 </li>
 						 <li data-flip-title="Pets" class="text-center">
-							<img id="" src="img/img-text-4.webp"  class="img-fluid img-bdr" alt="Portfolio"><br>
+							<div id="PetsPortfolio" class="photo-box portfolio-photo"></div>
 							<div>
 								<a href="https://bit.ly/markozpets" target="_blank">
 									<button type="button" class="btn btn-primary portfolio-btn mt-10" >Visit Site</button>	
@@ -178,7 +177,7 @@
 							</div>
 						 </li>
 						 <li data-flip-title="Food" class="text-center">
-							<img id="" src="img/img-text-5.webp"  class="img-fluid img-bdr" alt="Portfolio"><br>
+							<div id="FoodPortfolio" class="photo-box portfolio-photo"></div>
 							<div>
 								<a href="https://bit.ly/markrestaurant" target="_blank">
 									<button type="button" class="btn btn-primary portfolio-btn mt-10" >Visit Site</button>	
@@ -210,13 +209,13 @@
 		<!-- Start of Services -->
 		<section id="myServices" class="section-gap section-bg-yellow">
 			<div class="text-center mb-80"> 
-				<img id="" src="img/tri-up.webp" class="tri-up-down img-fluid"  alt="mobile-reponsive">
+				<img id="" src="img/tri-up.webp" class="tri-up-down img-fluid photo-box"  alt="mobile-reponsive">
 				<h1 class="section-title">SERVICES</h1>
-				<img id="" src="img/tri-down.webp" class="tri-up-down img-fluid"  alt="mobile-reponsive">
+				<img id="" src="img/tri-down.webp" class="tri-up-down img-fluid photo-box"  alt="mobile-reponsive">
 			</div>
 			<div class="row"> 
 				<div class="col-6 col-sm-12 col-md-12 col-lg-6 text-center animated slideInDown delay-5s"> 
-					<h2 class=""><p>Looking for a Web Developer?</p><h2>
+					<h2 class=""><p>Looking for a Web Developer?</p></h2>
 					<h5><p>You are in the right place</p></h5>
 					<h5><p>I will help you create:</p></h5>
 					<table class="table">
@@ -235,7 +234,7 @@
 					</table>
 				</div>
 				<div class="col-6 col-sm-12 col-md-12 col-lg-6 text-center animated slideInUp delay-5s"> 
-					<h5><p>Mobile Responsive</p><h5>
+					<h5><p>Mobile Responsive</p></h5>
 					<img id="imgMobileResponsive" src="img/mobile-reponsive.webp" class="img-fluid img-bdr"  alt="mobile-reponsive" oncontextmenu="return false;">
 				</div>
 			</div>
@@ -253,9 +252,9 @@
 				</div>			
 			</div>
 			<div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center mt-80 mb-40"> 
-				<img id="" src="img/tri-up.webp" class="tri-up-down img-fluid"  alt="mobile-reponsive">
+				<img id="" src="img/tri-up.webp" class="tri-up-down img-fluid photo-box"  alt="mobile-reponsive">
 				<h1 class="section-title">MY TOOLS</h1>
-				<img id="" src="img/tri-down.webp" class="tri-up-down img-fluid"  alt="mobile-reponsive">
+				<img id="" src="img/tri-down.webp" class="tri-up-down img-fluid photo-box"  alt="mobile-reponsive">
 			</div>
 			<div id="ToolsLogoBG" class="row">
 				<!-- <div class="text-center animated slideInUp delay-5s"> 		 -->
@@ -285,20 +284,20 @@
 		</section>
 		<!-- End of Services -->
 		
-		<!-- Start Blogs -->
+		<!-- Start Articles -->
 		<section class="section-gap section-bg-yellow">
 			<div id="myBlogs"> 
 				<div class="container">
 					<div class="text-center mb-60"> 
-						<img id="" src="img/tri-up.webp" class="tri-up-down img-fluid"  alt="mobile-reponsive">
+						<img id="" src="img/tri-up.webp" class="tri-up-down img-fluid photo-box"  alt="mobile-reponsive">
 						<h1 class="section-title">ARTICLES</h1>
-						<img id="" src="img/tri-down.webp" class="tri-up-down img-fluid"  alt="mobile-reponsive">
+						<img id="" src="img/tri-down.webp" class="tri-up-down img-fluid photo-box"  alt="mobile-reponsive">
 						<p class="mt-40">This space is my sanctuary—a place where I pour out thoughts and opinions, born from what I have experienced, observed, and learned, and at times, woven purely from imagination.</p>
 					</div>
 					<div class="row text-center mt-20"> 
 						<div class="col-12 col-sm-12 col-md-6 col-lg-3"> 
 							<div class="card border-general text-center">
-							  <img src="img/img-copywriting.webp" class="card-img-top" alt="Card Image">
+							  <img src="img/img-copywriting.webp" class="card-img-top photo-box" alt="Card Image">
 							  <div class="card-body">
 								<h6 class="card-title">Valuable Tips on How to be a Copywriter.</h6>
 								<p class="card-text"></p>
@@ -311,7 +310,7 @@
 						</div>
 						<div class="col-12 col-sm-12 col-md-6 col-lg-3"> 
 							<div class="card border-general">
-							  <img src="img/img-heart.webp" class="card-img-top" alt="Card Image">
+							  <img src="img/img-heart.webp" class="card-img-top photo-box" alt="Card Image">
 							  <div class="card-body">
 								<h6 class="card-title">Why must we fall for the wrong person at least once?</h6>
 								<p class="card-text"></p>
@@ -323,7 +322,7 @@
 						</div>
 						<div class="col-12 col-sm-12 col-md-6 col-lg-3"> 
 							<div class="card border-general">
-							  <img src="img/img-people.webp" class="card-img-top" alt="Card Image">
+							  <img src="img/img-people.webp" class="card-img-top photo-box" alt="Card Image">
 							  <div class="card-body">
 								<h6 class="card-title">What are the Habits of Successful People?</h6>
 								<p class="card-text"></p>
@@ -335,7 +334,7 @@
 						</div>
 						<div class="col-12 col-sm-12 col-md-6 col-lg-3"> 
 							<div class="card border-general">
-							  <img src="img/img-travel.webp" class="card-img-top" alt="Card Image">
+							  <img src="img/img-travel.webp" class="card-img-top photo-box" alt="Card Image">
 							  <div class="card-body">
 								<h6 class="card-title">Experience vibrant Iloilo like a local.</h6>
 								<p class="card-text"></p>
@@ -351,16 +350,16 @@
 				
 			</div>
 		</section>
-		<!-- End Blogs -->		
+		<!-- End of Articles -->		
 		
 		<!--Start Quotes -->
 		<section class="section-gap section-bg-yellow">
 			<div id="myQuotesToLiveBy">
 				<div class="container">
 					<div class="text-center mb-40"> 
-						<img id="" src="img/tri-up.webp" class="tri-up-down img-fluid"  alt="mobile-reponsive">
+						<img id="" src="img/tri-up.webp" class="tri-up-down img-fluid photo-box"  alt="mobile-reponsive">
 						<h1 class="section-title">QUOTES</h1>
-						<img id="" src="img/tri-down.webp" class="tri-up-down img-fluid"  alt="mobile-reponsive">
+						<img id="" src="img/tri-down.webp" class="tri-up-down img-fluid photo-box"  alt="mobile-reponsive">
 						<p class="mt-20 text-black">My compass in words: the quotes that move me.</p>
 					</div>
 					<!-- Start Quotes First Batch -->
@@ -479,7 +478,7 @@
 			<div class="container mb-40"> 
 				<div class="row"> 
 					<div class="col-12 col-sm-12 col-md-6 col-lg-6 author-info"> 
-						<img id="img-author" src="img/img-author.jpg" class="rounded border-general border-general-info" alt="Author">
+						<div id="img-author" class="photo-box author-photo rounded border-general border-general-info"></div>
 					</div>
 					<div class="col-12 col-sm-12 col-md-6 col-lg-6 my-auto author-info">
 						<h3 class="mt-10 font-yellow fw-bold">MARKOZ PAEZ</h3>
@@ -496,7 +495,7 @@
 				</div>
 			</div>
 			
-			<!-- Testing -->
+			<!-- Tab for CV, Photos and eBooks -->
 			<div class="card">
 				<div class="card-header">
 			  
@@ -590,7 +589,6 @@
 													July 2015 - Present<br>
 												</span>
 												<span>
-												<!-- Account Executive in Sales Department<br>  -->
 												•	Maintained existing client websites<br> 
 												•	Developed a sub‑company website for a client<br>
 												•	Developed a company website for my client's MSP customer<br><br>
@@ -669,51 +667,51 @@
 								<div class="row">
 									<div class="col-lg-4 col-md-4">
 										<a href="https://www.instagram.com/p/Bz9anmQHLHZ/" target="_blank">
-											<img src="img/ig-1.jpg" class="ig-pic img-fluid" alt="instagramfeed">
+											<img src="img/ig-1.jpg" class="ig-pic img-fluid photo-box" alt="instagramfeed">
 										</a>
 									</div>
 									<div class="col-lg-4 col-md-4">
 										<a href="https://www.instagram.com/p/Bz0XfMXgYV4/" target="_blank">
-											<img src="img/ig-2.jpg" class="ig-pic img-fluid" alt="instagramfeed">
+											<img src="img/ig-2.jpg" class="ig-pic img-fluid photo-box" alt="instagramfeed">
 										</a>
 									</div>
 									<div class="col-lg-4 col-md-4">
 										<a href="https://www.instagram.com/p/BjGmcnXHkXo/" target="_blank">
-											<img src="img/ig-3.jpg" class="ig-pic img-fluid" alt="instagramfeed">
+											<img src="img/ig-3.jpg" class="ig-pic img-fluid photo-box" alt="instagramfeed">
 										</a>
 									</div>
 								</div>	
 								<div class="row">
 									<div class="col-lg-4 col-md-4">
 										<a href="https://www.instagram.com/p/BjbOqn5H-lT/" target="_blank">
-											<img src="img/ig-4.jpg" class="ig-pic img-fluid" alt="instagramfeed">
+											<img src="img/ig-4.jpg" class="ig-pic img-fluid photo-box" alt="instagramfeed">
 										</a>
 									</div>
 									<div class="col-lg-4 col-md-4">
 										<a href="https://www.instagram.com/p/BiA9T5LnVOm/" target="_blank">
-											<img src="img/ig-5.jpg" class="ig-pic img-fluid" alt="instagramfeed">
+											<img src="img/ig-5.jpg" class="ig-pic img-fluid photo-box" alt="instagramfeed">
 										</a>
 									</div>
 									<div class="col-lg-4 col-md-4">
 										<a href="https://www.instagram.com/p/BkJsJKUnydo/" target="_blank">
-											<img src="img/ig-6.jpg" class="ig-pic img-fluid" alt="instagramfeed">
+											<img src="img/ig-6.jpg" class="ig-pic img-fluid photo-box" alt="instagramfeed">
 										</a>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-lg-4 col-md-4">
 										<a href="https://www.instagram.com/p/Bw65De0nb5S/" target="_blank">
-											<img src="img/ig-7.jpg" class="ig-pic img-fluid" alt="instagramfeed">
+											<img src="img/ig-7.jpg" class="ig-pic img-fluid photo-box" alt="instagramfeed">
 										</a>
 									</div>
 									<div class="col-lg-4 col-md-4">
 										<a href="https://www.instagram.com/p/Besu9yNHsUJ/" target="_blank">
-											<img src="img/ig-8.jpg" class="ig-pic img-fluid" alt="instagramfeed">
+											<img src="img/ig-8.jpg" class="ig-pic img-fluid photo-box" alt="instagramfeed">
 										</a>
 									</div>
 									<div class="col-lg-4 col-md-4">
 										<a href="https://www.instagram.com/p/BkRV4cZntjS/" target="_blank">
-											<img src="img/ig-9.jpg" class="ig-pic img-fluid" alt="instagramfeed">
+											<img src="img/ig-9.jpg" class="ig-pic img-fluid photo-box" alt="instagramfeed">
 										</a>
 									</div>
 								</div>
@@ -739,7 +737,7 @@
 										<!-- <li>Second eBook</li> -->
 										<!-- <li>Third eBook</li> -->
 									<!-- </ul> -->
-									<h3>eBooks are coming soon...<h3>
+									<h3>eBooks are coming soon...</h3>
 								</div>
 							</div>
 							<!-- eBooks -->
@@ -753,9 +751,8 @@
 				
 			</div>
 			
-			<!-- Testing -->
+			<!-- End for Tab for CV, Photos and eBooks -->
 			
-			</div>
 		</section>
 		<!-- End About Me -->
 		
@@ -843,7 +840,7 @@
 									<span class="badge badge-primary ml-5 font-yellow">+639-281-274-145</span>
 								</a>
 							</span>
-							</br><span class="fw-bold font-yellow">OR</span></br>
+							<br><span class="fw-bold font-yellow">OR</span><br>
 							<span class="fw-bold font-yellow">You may email me at:
 								<a class="a-link" href="mailto:markozpaez1525@gmail.com">
 									<span class="badge badge-primary ml-5 font-yellow">markozpaez1525@gmail.com</span>
