@@ -4,7 +4,7 @@
 	jQuery(document).ready(function(){
 		
 		/* Prevent my photos for right click */ 
-		document.querySelectorAll("img").forEach((img) => {
+		document.querySelectorAll(".photo-box").forEach((img) => {
 		  img.addEventListener("contextmenu", (event) => {
 			event.preventDefault();
 		  });
