@@ -13,6 +13,13 @@ h1, h2, h3, h4, h5, h6, th, i {
 	color: #063146 !important;
 }
 
+a {
+  text-decoration: none;
+}
+
+.badge {
+  --bs-badge-font-size: 0.95em;
+}
 
 .text-black {
 	color: #000
@@ -247,6 +254,10 @@ h1, h2, h3, h4, h5, h6, th, i {
 
 .img-bdr {
 	border: 2px solid #FB9301;
+}
+
+.img-reduce-15 {
+	width: 15%;
 }
 
 .img-reduce-20 {
