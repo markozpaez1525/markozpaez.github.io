@@ -123,13 +123,16 @@ a {
 }
 .nav-link {
 	color: #063146;
+	font-weight: bold;
+	background-color: #F8F9F0;
+	border: 1px solid #FB9301 !important;
 }
 .nav-link:hover {
-	background: none;
+	background-color: #063146;
 	border: none;
 	border-bottom: 1px solid transparent;
 	border-color: #fff;
-	color: #FB9301 !important;
+	color: #F8F9F0 !important;
 	border-radius: 0px;
 	cursor: pointer;
 }
@@ -606,7 +609,7 @@ button:hover, .fa:hover {
 	border: 1px solid #fff;
 }
 .page-footer {
-	background-color: #000;
+	background-color: #063146;
 	color: #ffffff;
 	padding-top: 15px;
 }
